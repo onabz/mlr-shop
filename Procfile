@@ -1,0 +1,1 @@
+web: gunicorn mlr_shop.wsgi:application
