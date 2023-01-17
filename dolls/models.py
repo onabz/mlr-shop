@@ -10,6 +10,7 @@ class DollType(models.Model):
     def __str__(self):
         return self.name
 
+
 class Doll(models.Model):
     """ A model to manage all dolls """
 
