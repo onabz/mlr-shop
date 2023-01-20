@@ -57,6 +57,10 @@ body {
     border: 1px solid black !important;
 }
 
+.onsale {
+    color: rgb(180, 43, 43);
+}
+
 .overlay {
     height: 100%;
     width: 100%;
