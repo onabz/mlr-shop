@@ -13,26 +13,24 @@
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                <div class="image-container my-5">
-                    {% if doll.image %}
-                        <a href="{{ doll.image.url }}" target="_blank">
-                            <img src="{{ doll.image.url }}" alt="{{ doll.name }}" class="card-img-top img-fluid">
-                        </a>
-                        {% else %}
-                        <a href="">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ doll.name }}" class="card-img-top img-fluid">
-                        </a>
-                        {% endif %}
-                </div>
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container my-5">
+                {% if doll.image %}
+                <a href="{{ doll.image.url }}" target="_blank">
+                    <img src="{{ doll.image.url }}" alt="{{ doll.name }}" class="card-img-top img-fluid">
+                </a>
+                {% else %}
+                <a href="">
+                    <img src="{{ MEDIA_URL }}noimage.png" alt="{{ doll.name }}" class="card-img-top img-fluid">
+                </a>
+                {% endif %}
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="doll-details-container mb-5 mt-md-5">
-                    <p class="mb-0">{{ doll.name }}</p>
-                    <p class="lead mb-0 text-left font-weight-bold">£{{ doll.price }}</p>
-                    <p class="mt-3">{{ doll.description }}</p>
-                </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="doll-details-container mb-5 mt-md-5">
+                <p class="mb-0">{{ doll.name }}</p>
+                <p class="lead mb-0 text-left font-weight-bold">£{{ doll.price }}</p>
+                <p class="mt-3">{{ doll.description }}</p>
             </div>
         </div>
     </div>
