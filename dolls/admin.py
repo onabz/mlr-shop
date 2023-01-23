@@ -6,8 +6,8 @@ from django_summernote.admin import SummernoteModelAdmin
 @admin.register(Doll)
 class DollAdmin(SummernoteModelAdmin):
 
-    list_display = ('name', 'category', 'price', 'image', 'on_sale')
-    list_filter = ('category',)
+    list_display = ('name', 'dolltype', 'price', 'image', 'on_sale')
+    list_filter = ('dolltype',)
     summernote_fields = ('description', 'safety_note', 'care_love_instructions')
 
 
