@@ -11,14 +11,14 @@
                 Shop by Doll
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="shop-by-doll-link">
-                <a href="" class="dropdown-item">Amaris</a>
-                <a href="" class="dropdown-item">Chaya</a>
-                <a href="" class="dropdown-item">Dami</a>
-                <a href="" class="dropdown-item">Imani</a>
-                <a href="" class="dropdown-item">Kobi</a>
-                <a href="" class="dropdown-item">Omario</a>
-                <a href="" class="dropdown-item">Plush Ama</a>
-                <a href="" class="dropdown-item">RJ</a>
+                <a href="{% url 'dolls' %}?dolltype=amaris" class="dropdown-item">Amaris</a>
+                <a href="{% url 'dolls' %}?dolltype=chaya" class="dropdown-item">Chaya</a>
+                <a href="{% url 'dolls' %}?dolltype=dami" class="dropdown-item">Dami</a>
+                <a href="{% url 'dolls' %}?dolltype=imani" class="dropdown-item">Imani</a>
+                <a href="{% url 'dolls' %}?dolltype=kobi" class="dropdown-item">Kobi</a>
+                <a href="{% url 'dolls' %}?dolltype=omario" class="dropdown-item">Omario</a>
+                <a href="{% url 'dolls' %}?dolltype=plush,ama" class="dropdown-item">Plush Ama</a>
+                <a href="{% url 'dolls' %}?dolltype=rj" class="dropdown-item">RJ</a>
             </div>
         </li>
 
