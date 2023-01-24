@@ -11,4 +11,7 @@ class DollAdmin(SummernoteModelAdmin):
     summernote_fields = ('description', 'safety_note', 'care_love_instructions')
 
 
-admin.site.register(DollType)
+@admin.register(DollType)
+class DollTypeAdmin(admin.ModelAdmin):
+
+    list_display = ('name',)
