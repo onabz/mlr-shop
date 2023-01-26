@@ -1,4 +1,7 @@
 from django.shortcuts import render, redirect, HttpResponse
+from django.contrib import messages
+
+from dolls.models import Doll
 
 
 def view_bag(request):
@@ -10,11 +13,13 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add product to shopping bag """
 
+    doll = Doll.objects.get(pk=item_id)
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
 
     for item_id in list(bag.keys()):
         bag[item_id] = item_id
+        messages.success(request, f'Added {doll.name} to your bag')
 
     request.session['bag'] = bag
     return redirect(redirect_url)
