@@ -14,14 +14,21 @@ def add_to_bag(request, item_id):
     """ Add product to shopping bag """
 
     doll = get_object_or_404(Doll, pk=item_id)
+    quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
 
-    for item_id in list(bag.keys()):
-        bag[item_id] = item_id
-        messages.success(request, f'Added {doll.name} to your bag')
+    if item_id in list(bag.keys()):
+        bag[item_id] += quantity
+    else:
+        bag[item_id] = quantity
+
+    # for item_id in list(bag.keys()):
+    #     bag[item_id]
+    #     messages.success(request, f'Added {doll.name} to your bag')
 
     request.session['bag'] = bag
+    # print(request.session['bag'])
     return redirect(redirect_url)
 
 
