@@ -52,6 +52,7 @@ def remove_from_bag(request, item_id):
 
     try:
         doll = get_object_or_404(Doll, pk=item_id)
+        bag = request.session.get('bag', {})
         bag.pop(item_id)
         # messages.success(request, f'Removed {doll.name} from your bag')
 
