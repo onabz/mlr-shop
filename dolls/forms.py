@@ -2,7 +2,7 @@ from django import forms
 from .models import Doll, DollType
 
 
-class DolltypeForm(forms.ModelForm):
+class DollForm(forms.ModelForm):
 
     class Meta:
         model = Doll
