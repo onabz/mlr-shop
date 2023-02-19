@@ -48,6 +48,12 @@
                                     <p class="lead mb-0 text-left font-weight-bold">£{{ doll.price }}</p>
                                 </div>
                                 {% endif %}
+                                {% if request.user.is_superuser %}
+                                    <small class="ml-3">
+                                        <a href="{% url 'edit_doll' doll.id %}">Edit</a> | 
+                                        <a class="text-danger" href="{% url 'delete_doll' doll.id %}">Delete</a>
+                                    </small>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
