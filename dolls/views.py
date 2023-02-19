@@ -53,9 +53,9 @@ def add_doll(request):
     if request.method == 'POST':
         form = DollForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            doll = form.save()
             messages.success(request, 'Successfully added new doll!')
-            return redirect(reverse('add_doll'))
+            return redirect(reverse('doll_detail', args=[doll.id]))
         else:
             messages.error(request, 'Failed to add new doll. Please ensure the form is valid.')
     else:
@@ -90,3 +90,11 @@ def edit_doll(request, doll_id):
     }
 
     return render(request, template, context)
+
+
+def delete_doll(request, doll_id):
+    """ Delete a doll from the store """
+    doll = get_object_or_404(Doll, pk=doll_id)
+    doll.delete()
+    messages.success(request, 'Doll deleted!')
+    return redirect(reverse('dolls'))
