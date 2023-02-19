@@ -66,3 +66,27 @@ def add_doll(request):
     }
 
     return render(request, template, context)
+
+
+def edit_doll(request, doll_id):
+    """ Edit a doll in the store """
+    doll = get_object_or_404(Doll, pk=doll_id)
+    if request.method == 'POST':
+        form = DollForm(request.POST, request.FILES, instance=doll)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated doll!')
+            return redirect(reverse('doll_detail', args=[doll.id]))
+        else:
+            messages.error(request, 'Failed to update doll. Please ensure the form is valid.')
+    else:
+        form = DollForm(instance=doll)
+        messages.info(request, f'You are editing {doll.name}')
+
+    template = 'dolls/edit_doll.html'
+    context = {
+        'form': form,
+        'doll': doll,
+    }
+
+    return render(request, template, context)
