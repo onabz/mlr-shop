@@ -49,8 +49,17 @@ def doll_detail(request, doll_id):
 
 
 def add_doll(request):
-    """ Add a doll to the store """
-    form = DollForm()
+    """ Add a new doll to the store """
+    if request.method == 'POST':
+        form = DollForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added new doll!')
+            return redirect(reverse('add_doll'))
+        else:
+            messages.error(request, 'Failed to add new doll. Please ensure the form is valid.')
+    else:
+        form = DollForm()
     template = 'dolls/add_doll.html'
     context = {
         'form': form,
