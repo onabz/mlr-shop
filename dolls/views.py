@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from .models import Doll, DollType
 from .forms import DollForm
@@ -48,8 +49,13 @@ def doll_detail(request, doll_id):
     return render(request, 'dolls/doll_detail.html', context)
 
 
+@login_required
 def add_doll(request):
     """ Add a new doll to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only authorized users allowed.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = DollForm(request.POST, request.FILES)
         if form.is_valid():
@@ -68,8 +74,13 @@ def add_doll(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_doll(request, doll_id):
     """ Edit a doll in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only authorized users allowed.')
+        return redirect(reverse('home'))
+
     doll = get_object_or_404(Doll, pk=doll_id)
     if request.method == 'POST':
         form = DollForm(request.POST, request.FILES, instance=doll)
@@ -92,8 +103,13 @@ def edit_doll(request, doll_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_doll(request, doll_id):
     """ Delete a doll from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only authorized users allowed.')
+        return redirect(reverse('home'))
+
     doll = get_object_or_404(Doll, pk=doll_id)
     doll.delete()
     messages.success(request, 'Doll deleted!')
