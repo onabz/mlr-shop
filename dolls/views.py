@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from .models import Doll, DollType
+from .forms import DollForm
 
 
 def all_dolls(request):
@@ -45,3 +46,14 @@ def doll_detail(request, doll_id):
     }
 
     return render(request, 'dolls/doll_detail.html', context)
+
+
+def add_doll(request):
+    """ Add a doll to the store """
+    form = DollForm()
+    template = 'dolls/add_doll.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
