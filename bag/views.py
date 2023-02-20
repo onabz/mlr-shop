@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, HttpResponse, get_object_or_404
+)
 from django.contrib import messages
 
 from dolls.models import Doll
@@ -29,7 +31,9 @@ def add_to_bag(request, item_id):
 
 
 def adjust_bag(request, item_id):
-    """ Adjust the quantity of the specified product to the specified amount """
+    """
+    Adjust the quantity of the specified product to the specified amount
+    """
 
     doll = get_object_or_404(Doll, pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -37,7 +41,9 @@ def adjust_bag(request, item_id):
 
     if quantity > 0:
         bag[item_id] = quantity
-        messages.success(request, f'Updated {doll.name} quantity to {bag[item_id]}')
+        messages.success(
+            request, f'Updated {doll.name} quantity to {bag[item_id]}'
+        )
     else:
         bag.pop(item_id)
         messages.success(request, f'Removed {doll.name} from your bag')
