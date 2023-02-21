@@ -75,106 +75,71 @@ Below are sketched images of how I planned to layout the website design. You wil
 
 ### Existing Features:
 
-  __The home page__
+- **The home page**
 
-  - .
- 
-![Home Page](static/documentation/testing/home-page.png)
-![Home Page](static/documentation/testing/article-list.png)
+    - The home page features a nav bar that contains the logo to the far left, a search bar to the center under which the nav links are located, a my account dropdown menu and a shopping bag link to the far right. 
+    - The home page features a background image with a hero text  and a shop now button.
 
- __Navigation Bar__
+![screenshot](documentation/testing/5-home-page.png)
 
-  - . 
-  - It makes it very easy for users to navigate around the pages with multiple links back to the home page.  
+- **Navigation Bar**
 
-![Nav Bar](static/documentation/testing/nav-bar-login.png)
-![Nav Bar](static/documentation/testing/nav-bar-logout.png)
+    - The navigation bar contains the logo to the far left, a search bar to the center under which the nav links are located, a my account dropdown menu and a shopping bag link to the far right.
 
-  __About Page__
+![screenshot](documentation/testing/5-nav-bar.png)
 
-  - The about page contains the page header which features a specifically choosen background image. It contains the name of the blog and author as the hero text. 
-  - Under the page header you have the about page content with a header and the content.
+- **Navigation Links**
 
-  ![About Page](static/documentation/testing/about-page.png)
+    - There are three navigation links: 'shop', 'shop by doll' and 'more'. The 'shop' link points to a page that contains all the dolls for sale on the site. The 'shop by doll' link is a drop down menu with a list of all the doll types. The 'more' link is also a drop down menu that contains links to the contact page and newsletter page.
 
-  __Article Page__
+![screenshot](documentation/testing/5-nav-link-1.png)
+![screenshot](documentation/testing/5-nav-link-2.png)
+![screenshot](documentation/testing/5-nav-link-3.png)
 
-  - This page shows each article in detail.
+- **My Account link**
 
-  ![Article Page](static/documentation/testing/article-pg.png)
+    - This link is a drop down menu that contains links to the doll management page, my profile page, and the login/logout/signup pages.
 
-  - It shows details about the title,excerpt,author and date the article was created. 
-  - It gives users the ability to like and unlike the article with a like button below the article.
+![screenshot](documentation/testing/5-my-account-page.png)
 
-  ![Like button](static/documentation/testing/like-comment.png)
+- **Doll Management page**
 
-  - It also gives users the ability to comment on articles with a comment section below the articles.
+    - The doll management page is where a super user can add a new doll to the site. It contains all the neccessary fields to assign a new doll to the site. It also contains the on sale field to mark a doll as on sale.
 
-  ![Comment section](static/documentation/testing/comment-section.png)
+![screenshot](documentation/testing/5-doll-mgt-pg1.png)
+![screenshot](documentation/testing/5-doll-mgt-pg2.png)
+![screenshot](documentation/testing/5-doll-mgt-pg3.png)
 
-  - When non superusers post comments, they do not appear immediately on the article page. Instead the request is sent to the admin for approval. Once approved it then appears below the article. This gives the admin the ability to filter out unwanted comments. 
+- **My Profile page**
 
-  __Article edit/delete feature__
+    - My profile page stores the delivery information for a specific user and that user's order history. It also contains a button for the user to update their delivery information.
 
-  - Under the article list section on the home page, a user can edit or delete an article that the user is authorised to.
-  - The edit or delete feature won't appear on articles the user is not authorised to modify.
+![screenshot](documentation/testing/5-my-profile-pg.png)
 
-  ![Edit/delete feature](static/documentation/testing/permission-to-edit-or-delete.png)
+- **Feature #1**
 
-  - A user who is not logged in cannot edit or delete any article.
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-  ![Edit/delete feature not available](static/documentation/testing/edit-or-delete-not-permitted-when-not-signed-in.png)
+![screenshot](documentation/feature01.png)
 
-  __Add Article Page__
+- **Feature #1**
 
-  - This is the page from which authorised users and admin can add new articles to the blog.
-  - A user needs to be logged in to use this page. If a user is not logged in, they get a warning page telling them to login.
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-  ![Add Article warning Page](static/documentation/testing/add-article-pg-not-permitted.png)
+![screenshot](documentation/feature01.png)
 
-  - This page contains the relevant input fields for for adding a new article.
+- **Feature #1**
 
-  ![Add Article Page](static/documentation/testing/add-article-pg.png)
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-  __Update Article Page__
+![screenshot](documentation/feature01.png)
 
-  - This page allows authorised users to edit articles that they have posted.
-  - It gives them relevant prepopulated input fields to carryout editing.
-  - It has an update button to post the updated article.
+- **Feature #1**
 
-  __Delete Article Page__
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-  __Register Page__
+![screenshot](documentation/feature01.png)
 
-  - It contains input fields for signing up.
-  - It has a sign up button that has a hoover effect.
-  - It has a background image to the right side of the input fields which further showcases the brand.
-
-  ![Register Page](static/documentation/testing/register.png)
-
-  __Login Page__
-
-  - It contains input fields for user login. 
-  - It has a sign in button that has a hoover effect.
-  - It has a background image to the right side of the input fields which further showcases the brand.
-
-  ![Login Page](static/documentation/testing/login-page.png)
-
-  __Logout Page__
-
-  - It contains a sign out button for a user to logout. 
-  - The sign out button that has a hoover effect.
-  - It has a background image to the right side of the input fields which further showcases the brand.
-
-  ![Logout Page](static/documentation/testing/logout-page.png)
- 
-
- __The Footer__
-
-  - At the very bottom of the home page and every other page on the MLR website is the footer which houses the relevant social media links. 
-  -  When clicked on, these social media links open to a new tab preventing the user from having to use the back button to go back to the page they were on before.
-
-![Footer](static/documentation/testing/footer.png)
 
 ### Features Left to Implement
 
