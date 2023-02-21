@@ -1,9 +1,23 @@
-# Mum Loves Representation Shop
-Mum Loves Representation is an e commerce store for black, brown, and diverse dolls. It is owned by an African British Mum(Tomi) who wants her little girl to be able to play with a heirloom doll that represents her as she grows and plays imaginatively. She believes that all children should play with black dolls for the purpose of encouraging diversity. She feels that  brown dolls, black dolls, and ethnic dolls are often left upon the shelf, untouched and ignored while it is easy to get one's hands-on white dolls. 
+# MLR-SHOP ( Mum Loves Representation - Shop )
+MLR-SHOP is an ecommerce store for black, brown, and diverse dolls. It was inspired by my need for my daughter to have a soft doll that represented her.
+
+As a black woman and mother, after unsuccessfully finding a soft black girl doll that reflected her, I began to reflect on the experiences I had growing up as a little black girl. A few of the memories that came back to me, was the lack of representation in the toys/ dolls that I played with, and how that impacted my identity and love of myself growing up.   
+
+I loved playing with dolls, and nothing I had, or was given, looked like me. Consequently, I found myself wanting to look like my white girl dolls instead. I wanted to change who I was and what I looked like, to reflect the dolls that I saw.
+
+I want my little girl and so many others out there to have a soft doll that represents them and how they look. It is easy to get one’s hands-on white dolls, and that fact is just taken for granted.
+
+My mission is to get black, brown, and diverse dolls in the hands of our children and help them explore their imaginations and create stories that include dolls of all colours, so that they know that everyone counts, no matter the shade of their skin.
+
+Dolls and toys, play a big part in shaping a child's childhoods. Even though to us it is just playing, if you really listen to them, you can hear how they view the world, what they think, how they feel and see them shaping and re-imagining the world around them. It is because of this, and my need for my little girl to see herself as beautiful with her melanin rich skin tone, that I made these dolls.
+
+I hope that everyone black, brown or white, that have children, will recognize that your child having and playing with a beloved black doll along with their other dolls, can help them delight in the celebration of others who are also black in real life.
+
+Let us educate our children to celebrate and love our differences.
 
 ![Responsive Mockup]()
 
-The Responsive Mockup image above shows how responsive the Mum Loves Representation shop is across various device screen sizes ranging from mobile devices to large monitor screens. The Mum Loves Representation shop is well layed out with a bold font style used across all pages. The buttons are very legible on all the screen sizes. 
+The Responsive Mockup image above shows how responsive the MLR-SHOP is across various device screen sizes ranging from mobile devices to large monitor screens. The Mum Loves Representation shop is well layed out with a bold font style used across all pages. The buttons are very legible on all the screen sizes. 
 
 ## UX
 
