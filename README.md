@@ -21,9 +21,13 @@ The Responsive Mockup image above shows how responsive the MLR-SHOP is across va
 
 ## UX
 
+### Colour Scheme Used
+
+### Typography
+
 ### User Stories:
 - As a Shopper I want to be able to view a list of products so that I can select some to purchase.
-- As a User I can click on an article so that I can read it in full.
+- As a shopper I want to be able to view individual product details so that I can identify the price, description and product image
 - As a Shopper I want to be able to quickly identify deals, clearance items and special offers so that I can take advantage of special savings on products.
 - As a Shopper I want to be able to view my total purchases so that I can monitor my spending.
 - As a Site User I want to be able to register an account so that I can have a personal account and be able to view my profile.
@@ -45,14 +49,6 @@ The Responsive Mockup image above shows how responsive the MLR-SHOP is across va
 - As a Store owner I want to be able to add a product so that I can add new items to my store.
 - As a Store owner I want to be able to edit and update a product so that I can edit and update various product criteria.
 - As a Store owner I want to be able to delete a product so that I can remove items that are no longer for sale.
-- As a Store owner I want to be able to delete a product so that I can remove items that are no longer for sale.
-
-### Colour Scheme Used
-. 
-
-### Typography
-
-.
 
 ### Wireframes
 
