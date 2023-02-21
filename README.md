@@ -22,14 +22,19 @@ The Responsive Mockup image above shows how responsive the MLR-SHOP is across va
 ## UX
 
 ### Colour Scheme Used
+
 I chose to use a black and white colour scheme for the website - Black for the texts, borders, buttons and icons. White for the overly. For the shop now button on the home page, the colours were switched. I used a background image for the home page to give an infusion of some bright colours. Using black and white colour combination helps in adding dramatic areas of contrast since they are very contrasting colours. This contrast helps to direct users attenton to key areas of each web page, to ensure that the maximum amount of information and content is noticed. Black and white don’t generally count as colours, so they serve as great base colours that can be paired well with other colours. They add an understated simplicity to the website making it look as minimalistic as possible.
+
 ### Typography
-I chose to use the Lato google font for the primary headers and titles and also for the secondary text. The Lato font is well known for its round edges and the approachable warmth it gives to the reader. Its type face helps deliver information directly. The Lato font works transparently in body text and also stands out individually when used in larger-sized titles.
 
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
+I chose to use the Lato google font for the primary headers and titles and also for the secondary text. The Lato font is well known for its round edges and the approachable warmth it gives to the reader. Its typeface helps deliver information directly. The Lato font works transparently in body text and also stands out individually when used in larger-sized titles. I used font awesome icons through the site for icons such as the lock icon on the secure checkout button and the chevron icon on the keep shopping button. Font awesome icons are very easy to use compared to other alternatives. They allow for flexibility of styling using css since they are treated as actual text. They are compatible with many browsers.
 
-- [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
+- [Lato](https://fonts.google.com/specimen/Lato) was used for the primary headers and titles and also for the secondary text.
+
+- [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the lock icon on the secure checkout button and the chevron icon on the keep shopping button.
+
 ### User Stories:
+
 - As a Shopper I want to be able to view a list of products so that I can select some to purchase.
 - As a shopper I want to be able to view individual product details so that I can identify the price, description and product image
 - As a Shopper I want to be able to quickly identify deals, clearance items and special offers so that I can take advantage of special savings on products.
