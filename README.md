@@ -82,6 +82,13 @@ Below are sketched images of how I planned to layout the website design. You wil
 
 ![screenshot](documentation/testing/5-home-page.png)
 
+- **Logo**
+
+    - The mlr-shop logo is clearly positioned to the top left of the nav bar. It is also a link to the home page.
+
+![screenshot](documentation/testing/5-logo.png)
+
+
 - **Navigation Bar**
 
     - The navigation bar contains the logo to the far left, a search bar to the center under which the nav links are located, a my account dropdown menu and a shopping bag link to the far right.
@@ -101,6 +108,7 @@ Below are sketched images of how I planned to layout the website design. You wil
     - This link is a drop down menu that contains links to the doll management page, my profile page, and the login/logout/signup pages.
 
 ![screenshot](documentation/testing/5-my-account-page.png)
+![screenshot](documentation/testing/5-my-account-page2.png)
 
 - **Doll Management page**
 
@@ -116,25 +124,130 @@ Below are sketched images of how I planned to layout the website design. You wil
 
 ![screenshot](documentation/testing/5-my-profile-pg.png)
 
-- **Feature #1**
+- **Logout page**
+
+    - The logout page allows a user to logout of his account. 
+    - It contains a sign out button for a user to logout.
+
+![screenshot](documentation/testing/5-logout-pg.png)
+
+- **Login page**
+
+    - It contains input fields for user login.
+    - It has a sign in button and a home button to return back to the home page without login in.
+    - It also contains a remember me checkbox to save the user login details for ease of login.
+
+![screenshot](documentation/testing/5-login-pg.png)
+
+- **Register page**
+
+    - It contains input fields for signing up, a signup button and a back to login button incase you already have an account.
+
+![screenshot](documentation/testing/5-register-pg.png)
+
+- **Shopping bag**
+
+    - The shopping bag when empty lets you know with a message saying your bag is empty. It has a keep shopping button to take you back to the shop page.
+    - When the shopping bag contains an item, it displays its name, price, quantity and subtotal.
+    - The quantity field is an input field allowing you to increase or decrease the quantity.
+    - Under it is the update button to update your change and the remove button to remove that item from the shopping bag.
+    - At the bottom of the page you have the Grand total, keep shopping button and secure checkout button.
+    - The shopping bag link also shows the current value of the shopping bag at anytime.
+
+![screenshot](documentation/testing/5-shopping-bag1.png)
+![screenshot](documentation/testing/5-shopping-bag2.png)
+![screenshot](documentation/testing/5-shopping-bag3.png)
+![screenshot](documentation/testing/5-shopping-bag4.png)
+
+
+- **Search bar**
+
+    - The search bar helps the user search for doll any doll across the site. It is clearly postioned at the center of the nav bar.
+
+![screenshot](documentation/testing/5-search-bar.png)
+
+- **Shop now button**
+
+    - This button takes users to the shop page that shows all the dolls available for sale on the site. On top of it is the hero text that draws users attention to the shop now button.
+
+![screenshot](documentation/testing/5-shopnow-button.png)
+
+- **Shop page**
+
+    - This page shows all the dolls available for sale on the site. It has a heading named Dolls.
+    - It shows each dolls name and price. Dolls on sale are clearly marked in red font colour. 
+
+![screenshot](documentation/testing/5-doll-pg1.png)
+![screenshot](documentation/testing/5-doll-pg2.png)
+![screenshot](documentation/testing/5-doll-pg3.png)
+
+- **Doll detail page**
+
+    - When a user clicks on any of the dolls on the shop page, it takes them to the doll detail page which shows all the details about the doll from its price to its description.
+    - It also has a quantity input page for selecting the quantity of that particular doll needed. It also has the add to bag button and the keep shopping button.
+
+![screenshot](documentation/testing/5-doll-detail-pg1.png)
+![screenshot](documentation/testing/5-doll-detail-pg2.png)
+
+- **Shop by doll dropdown menu**
+
+    - This dropdown menu shows links to each type of doll available. Once clicked on and a doll is selected, it takes the user to the dolls detail page 
+
+![screenshot](documentation/testing/5-nav-link-2.png)
+
+- **Contact link**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature01.png)
 
-- **Feature #1**
+- **Newsletter link**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature01.png)
 
-- **Feature #1**
+- **Checkout page**
+
+    - The checkout page is where the user can enter his personal details such as personal info, delivery address and card details.
+    - The left section of the page contains the fields for inputing the details and the right section contains the order summary.
+    - Below are the adjust bag button for adjusting the bag and the complete order button to complete the order.
+
+![screenshot](documentation/testing/5-checkout-pg1.png)
+![screenshot](documentation/testing/5-checkout-pg1.png)
+
+- **Order confirmation page**
+
+    - This page shows the detailed order summary information and also shows that a confirmation email has been sent to the relevant email. It has a continue shopping button at the buttom.
+
+![screenshot](documentation/testing/5-order-confirmation-pg.png)
+![screenshot](documentation/testing/5-order-confirmation-pg2.png)
+
+- **Success Messaging**
+
+    - These messages pop up just below the shopping bag to let the user know that the action just performed was successful. 
+    - For example when an order goes through and the confirmation page is shown, the success message pops up. 
+    - A success message also pops up when a user adds a doll to the shopping bag. In this case the success message also shows the name of the doll, quantity and total. It also gives the user to go straight to the checkout page.
+    - A success message pops up when a doll is removed from the shopping bag.
+
+![screenshot](documentation/testing/5-order-confirmation-success-msg-pg.png)
+![screenshot](documentation/testing/5-order-confirmation-pg2.png)
+![screenshot](documentation/testing/5-success-message-checkout.png)
+![screenshot](documentation/testing/5-success-message-checkout2.png)
+
+- **Error messaging**
+
+    - Just like the success messaging above you also have the error messaging if an invalid action is performed.
+
+![screenshot](documentation/testing/5-error-msg1.png)
+
+- **Edit page**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature01.png)
+![screenshot](documentation/testing/5-edit-button.png)
 
-- **Feature #1**
+- **Delete button**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
