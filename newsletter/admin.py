@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Newsletter
+from .models import Newsletter, SendMessage
 
 
 class NewsletterAdmin(admin.ModelAdmin):
@@ -8,3 +8,4 @@ class NewsletterAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Newsletter, NewsletterAdmin)
+admin.site.register(SendMessage)
