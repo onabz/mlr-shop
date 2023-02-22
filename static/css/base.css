@@ -86,6 +86,10 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+#footer {
+    background-color: white;
+}
+
 /* --------------------------------Bootstrap toasts */
 
 .message-container {
