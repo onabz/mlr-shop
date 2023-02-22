@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect
-from .models import Newsletter, SendMessage
+from .models import Newsletter
 from .forms import NewsletterForm, SendMessageForm
 from django.contrib import messages
+from django.core.mail import send_mail
+from django_pandas.io import read_frame
 
 
 def newsletter(request):
@@ -20,7 +22,27 @@ def newsletter(request):
 
 
 def send_message(request):
-    form = SendMessageForm()
+    emails = Newsletter.objects.all()
+    df = read_frame(emails, fieldnames=['email'])
+    mail_list = df['email'].values.tolist()
+    print(mail_list)
+    if request.method == 'POST':
+        form = SendMessageForm(request.POST)
+        if form.is_valid():
+            form.save()
+            title = form.cleaned_data.get('title')
+            message = form.cleaned_data.get('message')
+            send_mail(
+                title,
+                message,
+                '',
+                mail_list,
+                fail_silently=False,
+            )
+            messages.success(request, 'Message has been sent to the Mail List')
+            return redirect('send_message')
+    else:
+        form = SendMessageForm()
     context = {
         'form': form,
     }
