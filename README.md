@@ -80,28 +80,28 @@ Below are sketched images of how I planned to layout the website design. You wil
     - The home page features a nav bar that contains the logo to the far left, a search bar to the center under which the nav links are located, a my account dropdown menu and a shopping bag link to the far right. 
     - The home page features a background image with a hero text  and a shop now button.
 
-![screenshot](documentation/testing/5-home-page.png)
+![Home page](documentation/testing/5-home-page.png)
 
 - **Logo**
 
     - The mlr-shop logo is clearly positioned to the top left of the nav bar. It is also a link to the home page.
 
-![screenshot](documentation/testing/5-logo.png)
+![Logo](documentation/testing/5-logo.png)
 
 
 - **Navigation Bar**
 
     - The navigation bar contains the logo to the far left, a search bar to the center under which the nav links are located, a my account dropdown menu and a shopping bag link to the far right.
 
-![screenshot](documentation/testing/5-nav-bar.png)
+![Navigation Bar](documentation/testing/5-nav-bar.png)
 
 - **Navigation Links**
 
     - There are three navigation links: 'shop', 'shop by doll' and 'more'. The 'shop' link points to a page that contains all the dolls for sale on the site. The 'shop by doll' link is a drop down menu with a list of all the doll types. The 'more' link is also a drop down menu that contains links to the contact page and newsletter page.
 
-![screenshot](documentation/testing/5-nav-link-1.png)
-![screenshot](documentation/testing/5-nav-link-2.png)
-![screenshot](documentation/testing/5-nav-link-3.png)
+![Navigation Links](documentation/testing/5-nav-link-1.png)
+![Navigation Links](documentation/testing/5-nav-link-2.png)
+![Navigation Links](documentation/testing/5-nav-link-3.png)
 
 - **My Account link**
 
@@ -243,39 +243,49 @@ Below are sketched images of how I planned to layout the website design. You wil
 
 - **Edit page**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - This page can only be accessed by an authorized user or store owner. It allows the user to edit the details of any doll. It populates all the fields wiht the existing details about the doll allowing the user to change any detail. An update button is situated below to save the changes. A cancel button is also present.
 
 ![screenshot](documentation/testing/5-edit-button.png)
 
 - **Delete button**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - This allows the user to delete a doll.
 
 ![screenshot](documentation/feature01.png)
 
 
-### Features Left to Implement
+### Future Features
 
-- A Contact form to collect user info.
-- A category field to allow user categorize articles into various types. 
+- Cool new feature #1
+    - Any additional notes about this feature.
+- Cool new feature #2
+    - Any additional notes about this feature.
+- Cool new feature #3
+    - Any additional notes about this feature. 
 
-## Technologies Used
+## Tools & Technologies Used
 
-- I used HTML, CSS and Javascript to design the templates.
-- I used a Bootstrap theme that came with its css files and custom javascripts.
-- I used Javascript to set date in footer automatically.
-- I used Django frame work to create the website.
-- I used Python to input commands in Django frame work.
-- I used Gitpod as my IDE for this project.
-- I used Github to host my repositories.
-- I used Git for version control of my website.
-- I used Google Chrome DevTools for testing the application's functionality.
-- I used Font Awesome icon for the social media icons.
-- I used Heroku to deploy the website.
+- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
+- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
+- [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
+- [JavaScript](https://www.javascript.com) used for user interaction on the site.
+- [Python](https://www.python.org) used as the back-end programming language.
+- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [GitHub](https://github.com) used for secure online code storage.
+- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+- [Markdown Builder by Tim Nelson](https://traveltimn.github.io/readme-builder) used to help generate the Markdown files.
+- [Django](https://www.djangoproject.com) used as the Python framework for the site.
+- [PostgreSQL](https://www.postgresql.org) used as the relational database management.
+- [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
+- [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
+- [Cloudinary](https://cloudinary.com) used for online static file storage.
+- [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
 
 ## Database Schema
 
-![Database Schema](static/documentation/testing/Database_schema.png)
+![Dolls-App Database Schema](documentation/testing/db-schema-2.png)
+![Checkout-App Database Schema](documentation/testing/db-schema-3.png)
+![Profiles-App Database Schema](documentation/testing/db-schema-4.png)
 
 ## Testing 
 
