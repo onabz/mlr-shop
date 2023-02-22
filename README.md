@@ -287,6 +287,134 @@ Below are sketched images of how I planned to layout the website design. You wil
 ![Checkout-App Database Schema](documentation/testing/db-schema-3.png)
 ![Profiles-App Database Schema](documentation/testing/db-schema-4.png)
 
+## Agile Development Process
+
+### GitHub Projects
+
+[GitHub Projects](https://github.com/onabz/mlr-shop/projects) served as an Agile tool for this project.
+It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
+
+Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
+
+![Github Projects](documentation/testing/github_projects.png)
+
+### GitHub Issues
+
+[GitHub Issues](https://github.com/onabz/mlr-shop/issues) served as another Agile tool.
+There, I used my own **User Story Template** to manage user stories.
+
+It also helped with milestone iterations on a weekly basis.
+
+- [Open Issues](https://github.com/onabz/mlr-shop/issues)
+
+    ![screenshot](documentation/testing/gh-issue-opened.png)
+
+- [Closed Issues](https://github.com/onabz/mlr-shop/issues?q=is%3Aissue+is%3Aclosed)
+
+    ![screenshot](documentation/testing/gh-issue-closed.png)
+
+### MoSCoW Prioritization
+
+I've decomposed my Epics into stories prior to prioritizing and implementing them.
+Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
+
+- **Must Have**: guaranteed to be delivered (*max 80% of stories*)
+- **Should Have**: adds significant value, but not vital (*the rest ~10% of stories*)
+- **Could Have**: has small impact if left out (*5% of stories*)
+- **Won't Have**: not a priority for this iteration
+
+## Ecommerce Business Model
+
+This site sells goods to individual customers, and therefore follows a `Business to Customer` model.
+It is of the simplest **B2C** forms, as it focuses on individual transactions, and doesn't need anything
+such as monthly/annual subscriptions.
+
+It is still in its early development stages, although it already has a newsletter, and links for social media marketing.
+
+Social media can potentially build a community of users around the business, and boost site visitor numbers,
+especially when using larger platforms such a Facebook.
+
+A newsletter list can be used by the business to send regular messages to site users.
+For example, what items are on special offer, new items in stock,
+updates to business hours, notifications of events, and much more!
+
+## Search Engine Optimization (SEO) & Social Media Marketing
+
+### Keywords
+
+I've identified some appropriate keywords to align with my site, that should help users
+when searching online to find my page easily from a search engine.
+This included a series of the following keyword types
+
+- Short-tail (head terms) keywords
+- Long-tail keywords
+
+I also played around with [Word Tracker](https://www.wordtracker.com) a bit
+to check the frequency of some of my site's primary keywords (only until the free trial expired).
+
+### Sitemap
+
+I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
+This was generated using my deployed site URL: https://mlr-shop.herokuapp.com
+
+After it finished crawling the entire site, it created a
+[sitemap.xml](sitemap.xml) which I've downloaded and included in the repository.
+
+### Robots
+
+I've created the [robots.txt](robots.txt) file at the root-level.
+Inside, I've included the default settings:
+
+```
+User-agent: *
+Disallow:
+Sitemap: https://mlr-shop.herokuapp.com/sitemap.xml
+```
+
+Further links for future implementation:
+- [Google search console](https://search.google.com/search-console)
+- [Creating and submitting a sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
+- [Managing your sitemaps and using sitemaps reports](https://support.google.com/webmasters/answer/7451001)
+- [Testing the robots.txt file](https://support.google.com/webmasters/answer/6062598)
+
+### Social Media Marketing
+
+Creating a strong social base (with participation) and linking that to the business site can help drive sales.
+Using more popular providers with a wider user base, such as Facebook, typically maximizes site views.
+
+I've created a mockup Facebook business account using the
+[Balsamiq template](https://code-institute-org.github.io/5P-Assessments-Handbook/files/Facebook_Mockups.zip)
+provided by Code Institute.
+
+![screenshot](documentation/mockup-facebook.png)
+
+### Newsletter Marketing
+
+I have incorporated a newsletter sign-up form on my application, to allow users to supply their
+email address if they are interested in learning more. 
+
+Option 1 (MailChimp):
+- Sign up for a Mailchimp account
+- This allows up to 2,500 subscription email sends per month
+- Incorporate the code and scripts into your project like in the CI lessons.
+
+Option 2 (Django):
+- Create a custom newsletter app in your project, with a custom model.
+- This method satisfies two assessment criteria:
+    - include a newsletter
+    - one of your custom models
+- It doesn't need anything except the "email" on the model.
+- Example:
+    ```python
+    class Newsletter(models.Model):
+    email = models.EmailField(null=False, blank=False)
+
+    def __str__(self):
+        return self.email
+    ```
+- Consider using the same `send_mail()` functionality used on the `webhook_handler.py` file.
+    - You can trigger an email sent out to subscribed users when new products are added to the site!
+
 ## Testing 
 
 - I tested that pagination was working properly on the home page by adding more than four articles to trigger pagination.
