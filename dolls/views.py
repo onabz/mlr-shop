@@ -22,10 +22,14 @@ def all_dolls(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You did not enter any search criteria!")
+                messages.error(
+                    request, "You did not enter any search criteria!"
+                )
                 return redirect(reverse('dolls'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query
+            )
             dolls = dolls.filter(queries)
 
     context = {
@@ -63,7 +67,9 @@ def add_doll(request):
             messages.success(request, 'Successfully added new doll!')
             return redirect(reverse('doll_detail', args=[doll.id]))
         else:
-            messages.error(request, 'Failed to add new doll. Please ensure the form is valid.')
+            messages.error(request,
+                           ('Failed to add new doll.'
+                            'Please ensure the form is valid.'))
     else:
         form = DollForm()
     template = 'dolls/add_doll.html'
@@ -89,7 +95,9 @@ def edit_doll(request, doll_id):
             messages.success(request, 'Successfully updated doll!')
             return redirect(reverse('doll_detail', args=[doll.id]))
         else:
-            messages.error(request, 'Failed to update doll. Please ensure the form is valid.')
+            messages.error(request,
+                           ('Failed to update doll.'
+                            'Please ensure the form is valid.'))
     else:
         form = DollForm(instance=doll)
         messages.info(request, f'You are editing {doll.name}')

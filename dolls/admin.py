@@ -8,7 +8,9 @@ class DollAdmin(SummernoteModelAdmin):
 
     list_display = ('name', 'dolltype', 'price', 'image', 'on_sale')
     list_filter = ('dolltype',)
-    summernote_fields = ('description', 'safety_note', 'care_love_instructions')
+    summernote_fields = (
+        'description', 'safety_note', 'care_love_instructions'
+    )
 
 
 @admin.register(DollType)
