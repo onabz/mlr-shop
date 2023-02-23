@@ -398,355 +398,197 @@ provided by Code Institute.
 I have incorporated a newsletter sign-up form on my application, to allow users to supply their
 email address if they are interested in learning more. 
 
-Option 1 (MailChimp):
-- Sign up for a Mailchimp account
-- This allows up to 2,500 subscription email sends per month
-- Incorporate the code and scripts into your project like in the CI lessons.
+[Newsletter Signup Page](documentation/testing/5-newsletter-subscribe.png)
 
-Option 2 (Django):
-- Create a custom newsletter app in your project, with a custom model.
-- This method satisfies two assessment criteria:
-    - include a newsletter
-    - one of your custom models
-- It doesn't need anything except the "email" on the model.
-- Example:
-    ```python
-    class Newsletter(models.Model):
-    email = models.EmailField(null=False, blank=False)
-
-    def __str__(self):
-        return self.email
-    ```
 - Consider using the same `send_mail()` functionality used on the `webhook_handler.py` file.
     - You can trigger an email sent out to subscribed users when new products are added to the site!
 
 ## Testing 
 
-- I tested that pagination was working properly on the home page by adding more than four articles to trigger pagination.
 
-![Pagination1](static/documentation/testing/test-for-pagination.png)
-![Pagination2](static/documentation/testing/test-for-pagination2.png)
-
-- I tested that I could create a new article with the add article page. The new article appeared at the top on the article list area of the home page.
-
-![Create article](static/documentation/testing/create-article.png)
-
-- I tested that I could edit the article I just created with the edit link next to the article.
-
-![Edit article](static/documentation/testing/edit-article.png)
-
-- I tested to show that I could delete the article I just edited with the delete link next to the edit link.
-
-![Delete article](static/documentation/testing/delete-article.png)
-![Delete article](static/documentation/testing/delete-article2.png)
-
-- I tested that I could register a new account by creating a test-account.
-
-![Create test account](static/documentation/testing/create-test-account.png)
-
-- I tested that the test-account could not edit or delete any other users article. While test-account is logged in, the edit and delete links are not visible next to the articles in the article list area of the home page.
-
-![No edit or delete link](static/documentation/testing/no-edit-delete-link.png)
-
-- I tested that the admin user account could edit or delete the article it created. Once logged in, it had access to the edit and delete links on the test article it created.
-
-![Edit and delete available](static/documentation/testing/edit-delete-available.png)
-
-- I tested that the like button was working and that it showed the number of likes.
-
-![Like button tested](static/documentation/testing/like-button-test1.png)
-![Like button tested](static/documentation/testing/like-button-test2.png)
-
-- I tested that all social media links were working and opening in new tabs.
-
-### Validator Testing 
-
-- HTML
-  - No errors were found when passing through the [Nu Html Checker](https://validator.w3.org/nu/?doc=https://marblog.herokuapp.com/)
-
-![Nu Html Checker](static/documentation/testing/html-validator-home.png)
-
-  - No errors were found when passing through the [Nu Html Checker](https://validator.w3.org/nu/?doc=https://marblog.herokuapp.com/about/)
-
-![Nu Html Checker](static/documentation/testing/html-validator-about.png)
-
-  - No errors were found when passing through the [Nu Html Checker](https://validator.w3.org/nu/?doc=https://marblog.herokuapp.com/accounts/signup/)
-
-![Nu Html Checker](static/documentation/testing/html-validator-signup.png)
-
-  - No errors were found when passing through the [Nu Html Checker](https://validator.w3.org/nu/?doc=https://marblog.herokuapp.com/accounts/login/)
-
-![Nu Html Checker](static/documentation/testing/html-validator-login.png)
-
-  - No errors were found when passing through the [Nu Html Checker](https://validator.w3.org/nu/?doc=https://marblog.herokuapp.com/black-mumprenuer-who-loves-representation/)
-
-![Nu Html Checker](static/documentation/testing/html-validator-articles.png )
-
-- CSS
-  - No errors were found when passing through the [W3C CSS Validator](https://validator.w3.org/nu/#textarea)
-
-![W3C CSS Validator](static/documentation/testing/CSS-validator.png)
-
-- Python
-  - No errors were found when passing the settings.py file through the CI Python Linter tool [CI Python Linter](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/onabz/MAR_Blog/main/marblog/settings.py)
-  
-  ![pep8ci tool](static/documentation/testing/settings-py.png)
-
-  - No errors were found when passing the urls.py file for the marblog project through the CI Python Linter tool [CI Python Linter](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/onabz/MAR_Blog/main/marblog/urls.py)
-
-  ![pep8ci tool](static/documentation/testing/urls-py.png)
-
-  - No errors were found when passing the admin.py file through the CI Python Linter tool [CI Python Linter](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/onabz/MAR_Blog/main/blog/admin.py)
-
-  ![pep8ci tool](static/documentation/testing/admin-py.png)
-
-  - No errors were found when passing the forms.py file through the CI Python Linter tool [CI Python Linter](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/onabz/MAR_Blog/main/blog/forms.py)
-
-  ![pep8ci tool](static/documentation/testing/forms-py.png)
-
-  - No errors were found when passing the models.py file through the CI Python Linter tool [CI Python Linter](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/onabz/MAR_Blog/main/blog/models.py)
-
-  ![pep8ci tool](static/documentation/testing/models-py.png)
-
-  - No errors were found when passing the urls.py file for the blog app through the CI Python Linter tool [CI Python Linter](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/onabz/MAR_Blog/main/blog/urls.py)
-
-  ![pep8ci tool](static/documentation/testing/blog-urls-py.png)
-
-  - No errors were found when passing the views.py file through the CI Python Linter tool [CI Python Linter](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/onabz/MAR_Blog/main/blog/views.py)
-
-  ![pep8ci tool](static/documentation/testing/views-py.png)
-
-### Browser testing
-  - Google Chrome
-
-  ![Chrome](static/documentation/testing/google-chrome.png)
-
-  - Firefox
-
-  ![Firefox](static/documentation/testing/firefox-browser.png)
-
-  - Opera
-
-  ![Opera](static/documentation/testing/opera-browser.png)
-
-  - Avg
-
-  ![Avg](static/documentation/testing/avg-browser.png)
-
-  - Brave
-
-  ![Brave](static/documentation/testing/brave-browser.png)
-
-  - Microsoft edge
-
-  ![Edge](static/documentation/testing/microsoft-edge-browser.png)
-
-
-### Responsiveness
-- Mobile screens
-
-  ![Mobile](static/documentation/testing/mobile-resolution.png)
-
-- Tablet screens
-
-  ![Tablet](static/documentation/testing/tablet-screen.png)
-
-- Small laptops
-
-  ![Small laptop](static/documentation/testing/small-laptop-screen.png)
-
-- Large laptops
-
-  ![Large laptop](static/documentation/testing/large-laptop-screens.png)
-
-- Extra large screens
-
-  ![Extra large screens](static/documentation/testing/extra-large-screens.png)
-
-
-### User story Testing
-
-- As a User I can view a list of all articles so that I can choose one to read.
-
-  ![Home Page](static/documentation/testing/article-list.png)
-
-- As a User I can click on an article so that I can read it in full.
-
-  ![Article Page](static/documentation/testing/article-pg.png)
-
-- As a User I can like or unlike articles so that I can express my views about them.
-
-  ![Like button](static/documentation/testing/like-comment.png)
-  ![Like button tested](static/documentation/testing/like-button-test1.png)
-
-- As a User I can view number of likes on each article so that I can see those that are more popular.
-
-  ![Like button tested](static/documentation/testing/like-button-test1.png)
-
-- As a User I can leave comments on an article so that I can interact with the content creator.
-
-  ![Comment section](static/documentation/testing/comment-section.png)
-
-- As a User I can view comments on articles so that I can see the reader's thoughts on the article.
-
-  ![View comments](static/documentation/testing/view-comments.png)
-
-- As a User/Admin I can approve or disapprove comments so that I can filter out questionable comments.
-
-  ![Approve comment](static/documentation/testing/comment-approval1.png)
-
-- As a User I can register an account so that I can like and comment on an article.
-
-  ![Register new account](static/documentation/testing/register.png)
-
-- As a User/Admin I can create, read, update and delete posts so that I can manage my articles.
-
-  ![Create article](static/documentation/testing/add-article-pg.png)
-  ![Read article](static/documentation/testing/article-pg.png)
-  ![Update article](static/documentation/testing/update-article-pg.png)
-  ![Delete article](static/documentation/testing/delete-article.png)
-
-- As a User/Admin I can draft an article so that I can work on it later.
-
-  ![Article draft](static/documentation/testing/draft.png)
-
-- As a Site User I can add an article from within the website so that I don't have to use the admin panel.
-
-  ![Add new article](static/documentation/testing/add-article-pg.png)
-
-- As a Site User I can edit an article from within the website so that I don't have to use the admin panel.
-
-  ![Edit article](static/documentation/testing/update-article-pg.png)
-
-- As a Site User I can delete an article from within the website so that I don't have to use the admin panel.
-
-  ![Delete article](static/documentation/testing/delete-article.png)
 
 
 ## Deployment
 
-The app was deployed to Heroku. There are four stages:
-  - Create the Heroku app,
-  - Attach the database,
-  - Prepare our environment and settings.py file,
-  - Get our static and media files stored on Cloudinary.
+The live deployed application can be found deployed on [Heroku](https://mlr-shop.herokuapp.com).
 
-- Create the Heroku app:
-  - In Heroku.com create new Heroku App - APP_NAME, Location = Europe.
-  - Add Database to App Resources - Located in the Resources Tab, Add-ons, search and add e.g. 'Heroku Postgres'.
-  - Copy DATABASE_URL value - Located in the Settings Tab, click reveal Config Vars, Copy Text.
-   
-- Attach the Database:
-  - In gitpod:
-    - Create new env.py file on top level directory - E.g. env.py
+### ElephantSQL Database
 
-  - In env.py:
-    - Import os library - import os
-    - Set environment variables - os.environ["DATABASE_URL"] = "Paste in Heroku DATABASE_URL Link"
-    - Add in secret key - os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"
+This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL Database.
 
-  - In heroku.com:
-    - Add Secret Key to Config Vars - SECRET_KEY, "randomSecretKey"
+To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
+- Click **Create New Instance** to start a new database.
+- Provide a name (this is commonly the name of the project: mlr-shop).
+- Select the **Tiny Turtle (Free)** plan.
+- You can leave the **Tags** blank.
+- Select the **Region** and **Data Center** closest to you.
+- Once created, click on the new database name, where you can view the database URL and Password.
 
-- Prepare our environment and settings.py file:
-    - In settings.py:
-      - Reference env.py -  
-        ```python                    
-        from pathlib import Path
-        import os
-        import dj_database_url
+### Stripe API
 
-        if os.path.isfile("env.py"):
-          import env
-        ```
-      - Remove the insecure secret key and replace - links to the SECRET_KEY variable on Heroku - `SECRET_KEY = os.environ.get('SECRET_KEY')`
-      - Comment out the old DataBases Section - 
-        ```python
-        # DATABASES = {
-        #     'default': {
-        #         'ENGINE': 'django.db.backends.sqlite3',
-        #         'NAME': BASE_DIR / 'db.sqlite3',
-        #     }
-        # }
-        ```
-      - Add new DATABASES Section ( - links to the DATATBASE_URL variable on Heroku) - 
-        ```python
-        DATABASES = {
-            'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-        }
-        ```
-    - In the Terminal:
-      - Save all files and Make Migrations - `python3 manage.py migrate`
-  
-  - Get our static and media files stored on Cloudinary:
-    - In Cloudinary.com:
-      - Copy your CLOUDINARY_URL e.g. API Environment Variable - From Cloudinary Dashboard
-    - In env.py:
-     - Add Cloudinary URL to env.py - be sure to paste in the correct section of the link - `os.environ["CLOUDINARY_URL"] = "cloudinary://************************"`
-    - In Heroku:
-      - Add DISABLE_COLLECTSTATIC to Heroku Config Vars (temporary step for the moment, will be removed before deployment - e.g. `DISABLE_COLLECTSTATIC`, `1`
-    - In settings.py:
-      - Add Cloudinary Libraries to installed apps - 
-        ```python                                            
-        INSTALLED_APPS = [
-            …,
-            'cloudinary_storage',
-            'django.contrib.staticfiles',
-            'cloudinary',
-            …,
-        ]
-        ```
-        (note: order is important)
-      - Tell Django to use Cloudinary to store media and static files (Place under the Static files) - 
-        ```python
-        STATIC_URL = '/static/'
+This project uses [Stripe](https://stripe.com) to handle the ecommerce payments.
 
-        STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-        STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-        STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+Once you've created a Stripe account and logged-in, follow these series of steps to get your project connected.
 
-        MEDIA_URL = '/media/'
-        DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-        ```
-      - Link file to the templates directory in Heroku (Place under the BASE_DIR line) - 
-        `TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')`
-      - Change the templates directory to TEMPLATES_DIR (Place within the TEMPLATES array) - 
-        ```python
-        TEMPLATES = [
-          {
-            …,
-            'DIRS': [TEMPLATES_DIR],
-            …,
-          },
-        ]
-        ```
-      - Add Heroku Hostname to ALLOWED_HOSTS - `ALLOWED_HOSTS = ['marblog.herokuapp.com', 'localhost']`
-    - In Gitpod:
-      - Create 3 new folders on top level directory - media, static, templates
-      - Create procfile on the top level directory - Procfile
-    - In Procfile:
-      - Add code - `web: gunicorn marblog.wsgi`
-    - Note: Save all files
-    -  In the Terminal:
-      - Add, Commit and Push - 
-      ```bash
-      git add .
-      git commit -m "Deployment Commit"
-      git push
-      ```
-    - In Heroku:
-      - Deploy Content manually through heroku.
+- From your Stripe dashboard, click to expand the "Get your test API keys".
+- You'll have two keys here:
+	- `STRIPE_PUBLIC_KEY` = Publishable Key (starts with **pk**)
+	- `STRIPE_SECRET_KEY` = Secret Key (starts with **sk**)
 
+As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
 
-The live link can be found here - https://marblog.herokuapp.com/
+- From your Stripe dashboard, click **Developers**, and select **Webhooks**.
+- From there, click **Add Endpoint**.
+	- `https://mlr-shop.herokuapp.com/checkout/wh/`
+- Click **receive all events**.
+- Click **Add Endpoint** to complete the process.
+- You'll have a new key here:
+	- `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
+
+### Gmail API
+
+This project uses [Gmail](https://mail.google.com) to handle sending emails to users for account verification and purchase order confirmations.
+
+Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
+
+- Click on the **Account Settings** (cog icon) in the top-right corner of Gmail.
+- Click on the **Accounts and Import** tab.
+- Within the section called "Change account settings", click on the link for **Other Google Account settings**.
+- From this new page, select **Security** on the left.
+- Select **2-Step Verification** to turn it on. (verify your password and account)
+- Once verified, select **Turn On** for 2FA.
+- Navigate back to the **Security** page, and you'll see a new option called **App passwords**.
+- This might prompt you once again to confirm your password and account.
+- Select **Mail** for the app type.
+- Select **Other (Custom name)** for the device type.
+	- Any custom name, such as "Django" or mlr-shop
+- You'll be provided with a 16-character password (API key).
+	- Save this somewhere locally, as you cannot access this key again later!
+	- `EMAIL_HOST_PASS` = your new 16-character API key
+	- `EMAIL_HOST_USER` = your own personal Gmail email address (`you@gmail.com`)
+
+### Heroku Deployment
+
+This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+
+Deployment steps are as follows, after account setup:
+
+- Select **New** in the top-right corner of your Heroku Dashboard, and select **Create new app** from the dropdown menu.
+- Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select **Create App**.
+- From the new app **Settings**, click **Reveal Config Vars**, and set your environment variables.
+
+| Key | Value |
+| --- | --- |
+| `CLOUDINARY_URL` | cloudinary://175616147659519:J5_bUbeV_ciXIN3jEtHT6eBeILw@dxnatg2ni |
+| `DATABASE_URL` | postgres://cjegjbqb:cPy7xzXbBiHz0HoZdkikeIQyvNirXZR2@lucky.db.elephantsql.com/cjegjbqb |
+| `DISABLE_COLLECTSTATIC` | 1 (*this is temporary, and can be removed for the final deployment*) |
+| `EMAIL_HOST_PASS` | eedohgcywsszsidz |
+| `EMAIL_HOST_USER` | onabolumbe@gmail.com |
+| `SECRET_KEY` | am17d7szg$h_1595z!#q)9axg3ryyagu_*8bexxflcg&y+3d0d |
+| `STRIPE_PUBLIC_KEY` | pk_test_51MVbQwJDbOhf0bAhrpA38YaUHVOI2z9wRP2kRCvwRToBkaDTVwc2rJCF6pGX8VpxaTj1WmqzTPCmElxWaJ0SYIzI00bz191WYU |
+| `STRIPE_SECRET_KEY` | sk_test_51MVbQwJDbOhf0bAhWMuIR6c7NnBQlui8kyk5fuIMb51A0ENpS2KogXVBfqNMnbCRX0W9zDvVsooYDkNdxhHq0mkF00L3q27myj |
+| `STRIPE_WH_SECRET` | whsec_zp0rjHvFU5Uy7QHxAafDGcppETUsoArN |
+
+Heroku needs two additional files in order to deploy properly.
+- requirements.txt
+- Procfile
+
+You can install this project's **requirements** (where applicable) using:
+- `pip3 install -r requirements.txt`
+
+If you have your own packages that have been installed, then the requirements file needs updated using:
+- `pip3 freeze --local > requirements.txt`
+
+The **Procfile** can be created with the following command:
+- `echo web: gunicorn app_name.wsgi > Procfile`
+- *replace **app_name** with the name of your primary Django app name; the folder where settings.py is located*
+
+For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
+
+Either:
+- Select **Automatic Deployment** from the Heroku app.
+
+Or:
+- In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
+- Set the remote for Heroku: `heroku git:remote -a app_name` (replace *app_name* with your app name)
+- After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type:
+	- `git push heroku main`
+
+The project should now be connected and deployed to Heroku!
 
 ### Local Deployment
 
-To make a local copy of this project, you can clone it by typing the following in your IDE terminal:
+This project can be cloned or forked in order to make a local copy on your own system.
 
-- `git clone https://github.com/onabz/MAR_Blog.git`
+For either method, you will need to install any applicable packages found within the *requirements.txt* file.
+- `pip3 install -r requirements.txt`.
 
-Alternatively, if using Gitpod, you can click the green Gitpod button, or use [this link](https://gitpod.io/#https://github.com/onabz/MAR_Blog)
+You will need to create a new file called `env.py` at the root-level,
+and include the same environment variables listed above from the Heroku deployment steps.
+
+Sample `env.py` file:
+
+```python
+import os
+
+os.environ.setdefault("CLOUDINARY_URL", "cloudinary://175616147659519:J5_bUbeV_ciXIN3jEtHT6eBeILw@dxnatg2ni")
+os.environ.setdefault("DATABASE_URL", "postgres://cjegjbqb:cPy7xzXbBiHz0HoZdkikeIQyvNirXZR2@lucky.db.elephantsql.com/cjegjbqb")
+os.environ.setdefault("EMAIL_HOST_PASS", "eedohgcywsszsidz")
+os.environ.setdefault("EMAIL_HOST_USER", "onabolumbe@gmail.com")
+os.environ.setdefault("SECRET_KEY", "am17d7szg$h_1595z!#q)9axg3ryyagu_*8bexxflcg&y+3d0d")
+os.environ.setdefault("STRIPE_PUBLIC_KEY", "pk_test_51MVbQwJDbOhf0bAhrpA38YaUHVOI2z9wRP2kRCvwRToBkaDTVwc2rJCF6pGX8VpxaTj1WmqzTPCmElxWaJ0SYIzI00bz191WYU")
+os.environ.setdefault("STRIPE_SECRET_KEY", "sk_test_51MVbQwJDbOhf0bAhWMuIR6c7NnBQlui8kyk5fuIMb51A0ENpS2KogXVBfqNMnbCRX0W9zDvVsooYDkNdxhHq0mkF00L3q27myj")
+os.environ.setdefault("STRIPE_WH_SECRET", "whsec_zp0rjHvFU5Uy7QHxAafDGcppETUsoArN")
+
+# local environment only (do not include these in production/deployment!)
+os.environ.setdefault("DEBUG", "True")
+```
+
+Once the project is cloned or forked, in order to run it locally, you'll need to follow these steps:
+- Start the Django app: `python3 manage.py runserver`
+- Stop the app once it's loaded: `CTRL+C` or `⌘+C` (Mac)
+- Make any necessary migrations: `python3 manage.py makemigrations`
+- Migrate the data to the database: `python3 manage.py migrate`
+- Create a superuser: `python3 manage.py createsuperuser`
+- Load fixtures (if applicable): `python3 manage.py loaddata file-name.json` (repeat for each file)
+- Everything should be ready now, so run the Django app again: `python3 manage.py runserver`
+
+If you'd like to backup your database models, use the following command for each model you'd like to create a fixture for:
+- `python3 manage.py dumpdata your-model > your-model.json`
+- *repeat this action for each model you wish to backup*
+
+#### Cloning
+
+You can clone the repository by following these steps:
+
+1. Go to the [GitHub repository](https://github.com/onabz/mlr-shop) 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash or Terminal
+5. Change the current working directory to the one where you want the cloned directory
+6. In your IDE Terminal, type the following command to clone my repository:
+	- `git clone https://github.com/onabz/mlr-shop.git`
+7. Press Enter to create your local clone.
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/onabz/mlr-shop)
+
+Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
+A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
+
+#### Forking
+
+By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
+You can fork this repository by using the following steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/onabz/mlr-shop)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
+
+### Local VS Deployment
+
+Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
 
 ## Credits 
  
