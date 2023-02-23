@@ -105,7 +105,7 @@ Below are sketched images of how I planned to layout the website design. You wil
 
 - **My Account link**
 
-    - This link is a drop down menu that contains links to the doll management page, my profile page, and the login/logout/signup pages.
+    - This link is a drop down menu that contains links to the doll management page, send newsletter, my profile page, and the login/logout/signup pages.
 
 ![screenshot](documentation/testing/5-my-account-page.png)
 ![screenshot](documentation/testing/5-my-account-page2.png)
@@ -117,6 +117,12 @@ Below are sketched images of how I planned to layout the website design. You wil
 ![screenshot](documentation/testing/5-doll-mgt-pg1.png)
 ![screenshot](documentation/testing/5-doll-mgt-pg2.png)
 ![screenshot](documentation/testing/5-doll-mgt-pg3.png)
+
+- **Send Newsletter**
+
+    - The send Newsletter page allows the store owner to send newsletters to all subscribers of the site. Only authorised accounts have access to this page.
+
+![screenshot](documentation/testing/5-send-newsletter.png)
 
 - **My Profile page**
 
@@ -197,15 +203,15 @@ Below are sketched images of how I planned to layout the website design. You wil
 
 - **Contact link**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - This is essentially the contact page were customers can contact the store owner about anything.
 
-![screenshot](documentation/feature01.png)
+![screenshot](documentation/testing/5-contactform.png)
 
 - **Newsletter link**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - This page allows customers to subcribe for regular newsletters from the site about important information such as new deals, sales and so on.
 
-![screenshot](documentation/feature01.png)
+![screenshot](documentation/testing/5-newsletter-subscribe.png)
 
 - **Checkout page**
 
@@ -253,15 +259,14 @@ Below are sketched images of how I planned to layout the website design. You wil
 
 ![screenshot](documentation/feature01.png)
 
-
 ### Future Features
 
-- Cool new feature #1
-    - Any additional notes about this feature.
-- Cool new feature #2
-    - Any additional notes about this feature.
-- Cool new feature #3
-    - Any additional notes about this feature. 
+- Categories
+    - I would like to implement a more robust category grouping of a larger range of diverse products on the site.
+- Filtering and sorting
+    - I would like to implement a proper filtering and sorting system to enable users be more specific in searchng for products.
+- Review section
+    - I would like to include a review section to enable customers to give important feed back on the products on the site. 
 
 ## Tools & Technologies Used
 
@@ -747,20 +752,19 @@ Alternatively, if using Gitpod, you can click the green Gitpod button, or use [t
  
 ### Content 
 
-- The steps I used for the project set up was taken from [I think Therefore I Blog](https://www.youtube.com/watch?v=kEdGDvrFSks&ab_channel=MediaUpload)
-- The steps I used to apply the bootstrap theme for the blog was from [Using a Bootstrap Theme](https://www.youtube.com/watch?v=tUPjzTHgEWA&t=10s&ab_channel=MediaUpload)
-- How I went about creating the update article page was taken from [Update and Edit Blog Post - Django Blog #6](https://www.youtube.com/watch?v=J7xaESAddDQ&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=15&ab_channel=Codemy.com) 
-- How I went about creating the delete article page was taken from [Delete a Blog Post - Django Blog #7](https://www.youtube.com/watch?v=8NPOwmtupiI&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=7&ab_channel=Codemy.com)
+- The steps I used for the project set up was taken from [I think Therefore I Blog](https://www.youtube.com/watch?v=kEdGDvrFSks&ab_channel=MediaUpload) and also [Boutique Ado](https://www.youtube.com/watch?v=EsJtBpLgLCw&ab_channel=MediaUpload)
+- The steps I used to setup the newsletter was taken from [Build a Newsletter Section for Your Django Web Application](https://www.youtube.com/watch?v=hWtlskOaFNI&ab_channel=KenBroTech)
+- Some of he steps I used in setting up the contact form were taken from [Create Contact Form in Django for any website || Contact Form with bootstrap in django](https://www.youtube.com/watch?v=lSgRWA4PMt4&t=42s&ab_channel=BLearningClub)
 
 ### Media
 
-- The bootstrap theme used in the design of the blog was from [Start Bootstrap](https://startbootstrap.com/theme/clean-blog)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-- The template for the login, logout and signup pages was from [Mdbootstrap](https://mdbootstrap.com/docs/standard/extended/login/#section-5)
+- The design idea for the website was taken from [Boutique Ado](https://www.youtube.com/watch?v=3gQazh-EIzY&t=20s&ab_channel=MediaUpload)
+- The icons used through out  the site were taken from [Font Awesome](https://fontawesome.com/)
 - All my background images were from [amarisandchaya](https://www.amarisandchaya.com/)
-- Most of the articles were from [amarisandchaya](https://www.amarisandchaya.com/) and one from [Metro Parent](https://www.metroparent.com/parenting/talking-about-race/the-importance-of-representation-in-toys/)
+- All my doll images were from [amarisandchaya](https://www.amarisandchaya.com/)
 
 ### Acknowledgements
 
 - I would like to thank my Mentor Tim Nelson for his invaluable support all through this project. I would not have been able to put all this together if not for his patience and insight.
 - I would like to thank [Student Care](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopmentecommerce/studentcare) for their regular check up on me to ensure that I was always on track to completing this project and to reassure me that they were always available if I needed any help.
+- I would like to thank the good people of [Tutor support](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopmentecommerce/tutor) for always being very polite and patient with me in resolving issues that I raised with them while working on this project. 
