@@ -91,3 +91,18 @@ I have used the recommended [CI Python Linter](https://pep8ci.herokuapp.com) to 
 | | [urls.py](profiles/urls.py) | [CI PEP8 Validator](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/onabz/mlr-shop/main/profiles/urls.py) |
 | | [views.py](profiles/views.py) | [CI PEP8 Validator](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/onabz/mlr-shop/main/profiles/views.py) |
 
+
+## Bugs
+
+### **Fixed Bugs**
+
+- HTML Validation error on dolls detail page. This is from Summernote widget, and cannot be fixed from my side.
+
+    - To fix this, I removed Summernote entirely.
+
+    ![screenshot](documentation/testing/summernote-validation-error.png)
+
+
+## Unfixed Bugs
+
+There are no remaining bugs that I am aware of.
