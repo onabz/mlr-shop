@@ -158,6 +158,20 @@ Below are sketched images of how I planned to layout the website design. You wil
 
 ![screenshot](documentation/testing/5-register-pg.png)
 
+- **Random Message of Empowerment**
+
+    - On the home page, every page refresh, there is a random message from MLR. These are randomly selected from a custom model each time. There are 7 currently.
+
+    - I can do anything I set my mind to.
+    - I am an original.
+    - What I believe about myself is more important.
+    - I am confident in who I am.
+    - I can become whatever I want to be.
+    - I am capable of amazing things.
+    - I start with a positive mindset.
+
+![screenshot](documentation/testing/sayings.png)
+
 - **Shopping bag**
 
     - The shopping bag when empty lets you know with a message saying your bag is empty. It has a keep shopping button to take you back to the shop page.
