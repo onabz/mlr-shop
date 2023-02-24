@@ -10,8 +10,8 @@
 {% endblock %}
 
 {% block content %}
-<div class="container h-100">
-    <div class="row h-100">
+<div class="container">
+    <div class="row">
         <div class="col-7 col-md-6 my-auto">
             <h1 class="display-4 logo-font text-white">
                 Diverse doll Online Store
@@ -20,6 +20,17 @@
                 <h4>
                     <a href="{% url 'dolls' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
                 </h4>
+            </div>
+            <!-- random message each time on reload -->
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-body">
+                    <p class="card-text">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">{{ message }}</p>
+                            <footer class="blockquote-footer text-warning">Mum Loves Representation</footer>
+                        </blockquote>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
