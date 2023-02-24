@@ -497,15 +497,15 @@ Deployment steps are as follows, after account setup:
 
 | Key | Value |
 | --- | --- |
-| `CLOUDINARY_URL` | <insert-your-own> |
-| `DATABASE_URL` | <insert-your-own> |
+| `CLOUDINARY_URL` | "<insert-your-own>" |
+| `DATABASE_URL` | "<insert-your-own>" |
 | `DISABLE_COLLECTSTATIC` | 1 (*this is temporary, and can be removed for the final deployment*) |
-| `EMAIL_HOST_PASS` | <insert-your-own> |
-| `EMAIL_HOST_USER` | <insert-your-own> |
-| `SECRET_KEY` | <insert-your-own> |
-| `STRIPE_PUBLIC_KEY` | <insert-your-own> |
-| `STRIPE_SECRET_KEY` | <insert-your-own> |
-| `STRIPE_WH_SECRET` | <insert-your-own> |
+| `EMAIL_HOST_PASS` | "<insert-your-own>" |
+| `EMAIL_HOST_USER` | "<insert-your-own>" |
+| `SECRET_KEY` | "<insert-your-own>" |
+| `STRIPE_PUBLIC_KEY` | "<insert-your-own>" |
+| `STRIPE_SECRET_KEY` | "<insert-your-own>" |
+| `STRIPE_WH_SECRET` | "<insert-your-own>" |
 
 Heroku needs two additional files in order to deploy properly.
 - requirements.txt
