@@ -1,3 +1,7 @@
+from django.contrib import admin
+from .models import Saying
 
 
-# Register your models here.
+@admin.register(Saying)
+class SayingAdmin(admin.ModelAdmin):
+    list_display = ('message', )
