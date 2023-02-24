@@ -31,3 +31,12 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 | profiles | [profile.css](profiles/static/profiles/css/profile.css) | N/A | ![screenshot](documentation/testing/validation/css-profile.png) | |
 | checkout | [checkout.css](checkout/static/checkout/css/checkout.css) | N/A | ![screenshot](documentation/testing/validation/css-checkout.png) | 1 warning |
 
+### JavaScript
+
+I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
+
+| App | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| checkout | [stripe_elements.js](checkout/static/checkout/js/stripe_elements.js) | ![screenshot](documentation/testing/validation/js-stripe.png) | Undefined Stripe variable |
+| profiles | [countryfield.js](profiles/static/profiles/js/countryfield.js) | ![screenshot](documentation/testing/validation/js-profiles.png) | |
+
