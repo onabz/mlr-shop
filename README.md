@@ -412,8 +412,7 @@ email address if they are interested in learning more.
 
 ## Testing 
 
-
-
+To view all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
 
