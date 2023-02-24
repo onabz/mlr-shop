@@ -41,7 +41,11 @@
                             <div class="row">
                                 {% if doll.on_sale %}
                                 <div class="col">
-                                    <p class="onsale lead mb-0 text-left font-weight-bold">£{{ doll.price }}</p>
+                                    <p class="onsale lead mb-0 text-left font-weight-bold">
+                                        <i class="fas fa-tag"></i>
+                                        £{{ doll.price }}
+                                        <small>on sale</small>
+                                    </p>
                                 </div>
                                 {% else %}
                                 <div class="col">

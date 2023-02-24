@@ -33,6 +33,12 @@
             <div class="doll-details-container mb-5 mt-md-5">
                 <p class="mb-0">{{ doll.name }}</p>
                 <p class="lead mb-0 text-left font-weight-bold">£{{ doll.price }}</p>
+                {% if doll.on_sale %}
+                <p class="text-danger">
+                    <i class="fas fa-tag"></i>
+                    <small>on sale</small>
+                </p>
+                {% endif %}
                 <p class="mt-3"><strong>Certification:</strong> {{ doll.certification|safe }}</p>
                 <p class="mt-3"><strong>Safety Note:</strong> {{ doll.safety_note|safe }}</p>
                 <p class="mt-3"><strong>Size:</strong> {{ doll.size|safe }}</p>
