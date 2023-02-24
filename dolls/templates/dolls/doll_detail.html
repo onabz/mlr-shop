@@ -26,7 +26,7 @@
                 {% endif %}
             </div>
             <div class="description-container">
-                <p class="mt-3">{{ doll.description|safe }}</p>
+                <p class="mt-3">{{ doll.description|safe|linebreaksbr }}</p>
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
@@ -39,17 +39,17 @@
                     <small>on sale</small>
                 </p>
                 {% endif %}
-                <p class="mt-3"><strong>Certification:</strong> {{ doll.certification|safe }}</p>
-                <p class="mt-3"><strong>Safety Note:</strong> {{ doll.safety_note|safe }}</p>
-                <p class="mt-3"><strong>Size:</strong> {{ doll.size|safe }}</p>
-                <p class="mt-3"><strong>Materials:</strong> {{ doll.materials|safe }}</p>
-                <p class="mt-3"><strong>Care:</strong>{{ doll.care_love_instructions|safe }}</p>
                 {% if request.user.is_superuser %}
-                    <small class="ml-3">
-                        <a href="{% url 'edit_doll' doll.id %}">Edit</a> | 
-                        <a class="text-danger" href="{% url 'delete_doll' doll.id %}">Delete</a>
-                    </small>
+                <small>
+                    <a href="{% url 'edit_doll' doll.id %}">Edit</a> | 
+                    <a class="text-danger" href="{% url 'delete_doll' doll.id %}">Delete</a>
+                </small>
                 {% endif %}
+                <p class="mt-3"><strong>Certification:</strong><br>{{ doll.certification }}</p>
+                <p class="mt-3"><strong>Safety Note:</strong><br>{{ doll.safety_note|safe|linebreaksbr }}</p>
+                <p class="mt-3"><strong>Size:</strong><br>{{ doll.size }}</p>
+                <p class="mt-3"><strong>Materials:</strong><br>{{ doll.materials }}</p>
+                <p class="mt-3"><strong>Care:</strong><br>{{ doll.care_love_instructions|safe|linebreaksbr }}</p>
                 <form action="{% url 'add_to_bag' doll.id %}" class="form" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
