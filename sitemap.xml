@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://mlr-shop.herokuapp.com/</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/bag/</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/?dolltype=amaris</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/?dolltype=chaya</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/?dolltype=dami</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/?dolltype=imani</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/?dolltype=kobe</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/?dolltype=omario</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/?dolltype=plush%20ama</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/?dolltype=rj</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/contact/</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/newsletter/</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/5</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/4</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/3</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/2</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/1</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/8</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/7</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mlr-shop.herokuapp.com/dolls/6</loc>
+  <lastmod>2023-02-24T15:55:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
