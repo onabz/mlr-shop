@@ -63,13 +63,20 @@ I chose to use the Lato google font for the primary headers and titles and also 
 
 Below are sketched images of how I planned to layout the website design. You will notice that the final design of the website is slightly different from my initial sketches for some pages which is because the template i used was not an exact match to my sketches.
 
-![Home Template Wireframe]()
-![About Template Wireframe]()
-![Article Template Wireframe]()
-![Add Article Template Wireframe]()
-![Register Template Wireframe]()
-![Logout Template Wireframe]()
-![Signin Template Wireframe]()
+![Home Template Wireframe](documentation/wireframes/home-pg.jpg)
+![All Dolls Template Wireframe](documentation/wireframes/all-dolls-pg (2).jpg)
+![Doll Detail Template Wireframe](documentation/wireframes/doll-detail-pg.jpg)
+![Shopping Bag Template Wireframe](documentation/wireframes/shopping-bag-pg.jpg)
+![Checkout Template Wireframe](documentation/wireframes/checkout-pg.jpg)
+![My Profile Template Wireframe](documentation/wireframes/logout-pg.jpg)
+![Logout Template Wireframe](documentation/wireframes/logout-pg.jpg)
+![Login Template Wireframe](documentation/wireframes/login-pg.jpg)
+![Register Template Wireframe](documentation/wireframes/register-pg.jpg)
+![Subscribe To Newsletter Template Wireframe](documentation/wireframes/shopping-bag-pg.jpg)
+![Sendout Newsletter Template Wireframe](documentation/wireframes/send-newsletter.jpg)
+![Add New Doll Template Wireframe](documentation/wireframes/add-doll-pg.jpg)
+![Edit Doll Template Wireframe]()
+![Contact Template Wireframe](documentation/wireframes/contact-pg.jpg)
 
 ## Features 
 
