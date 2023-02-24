@@ -497,15 +497,15 @@ Deployment steps are as follows, after account setup:
 
 | Key | Value |
 | --- | --- |
-| `CLOUDINARY_URL` | cloudinary://175616147659519:J5_bUbeV_ciXIN3jEtHT6eBeILw@dxnatg2ni |
-| `DATABASE_URL` | postgres://cjegjbqb:cPy7xzXbBiHz0HoZdkikeIQyvNirXZR2@lucky.db.elephantsql.com/cjegjbqb |
+| `CLOUDINARY_URL` | <insert-your-own> |
+| `DATABASE_URL` | <insert-your-own> |
 | `DISABLE_COLLECTSTATIC` | 1 (*this is temporary, and can be removed for the final deployment*) |
-| `EMAIL_HOST_PASS` | eedohgcywsszsidz |
-| `EMAIL_HOST_USER` | onabolumbe@gmail.com |
-| `SECRET_KEY` | am17d7szg$h_1595z!#q)9axg3ryyagu_*8bexxflcg&y+3d0d |
-| `STRIPE_PUBLIC_KEY` | pk_test_51MVbQwJDbOhf0bAhrpA38YaUHVOI2z9wRP2kRCvwRToBkaDTVwc2rJCF6pGX8VpxaTj1WmqzTPCmElxWaJ0SYIzI00bz191WYU |
-| `STRIPE_SECRET_KEY` | sk_test_51MVbQwJDbOhf0bAhWMuIR6c7NnBQlui8kyk5fuIMb51A0ENpS2KogXVBfqNMnbCRX0W9zDvVsooYDkNdxhHq0mkF00L3q27myj |
-| `STRIPE_WH_SECRET` | whsec_zp0rjHvFU5Uy7QHxAafDGcppETUsoArN |
+| `EMAIL_HOST_PASS` | <insert-your-own> |
+| `EMAIL_HOST_USER` | <insert-your-own> |
+| `SECRET_KEY` | <insert-your-own> |
+| `STRIPE_PUBLIC_KEY` | <insert-your-own> |
+| `STRIPE_SECRET_KEY` | <insert-your-own> |
+| `STRIPE_WH_SECRET` | <insert-your-own> |
 
 Heroku needs two additional files in order to deploy properly.
 - requirements.txt
@@ -549,14 +549,14 @@ Sample `env.py` file:
 ```python
 import os
 
-os.environ.setdefault("CLOUDINARY_URL", "cloudinary://175616147659519:J5_bUbeV_ciXIN3jEtHT6eBeILw@dxnatg2ni")
-os.environ.setdefault("DATABASE_URL", "postgres://cjegjbqb:cPy7xzXbBiHz0HoZdkikeIQyvNirXZR2@lucky.db.elephantsql.com/cjegjbqb")
-os.environ.setdefault("EMAIL_HOST_PASS", "eedohgcywsszsidz")
-os.environ.setdefault("EMAIL_HOST_USER", "onabolumbe@gmail.com")
-os.environ.setdefault("SECRET_KEY", "am17d7szg$h_1595z!#q)9axg3ryyagu_*8bexxflcg&y+3d0d")
-os.environ.setdefault("STRIPE_PUBLIC_KEY", "pk_test_51MVbQwJDbOhf0bAhrpA38YaUHVOI2z9wRP2kRCvwRToBkaDTVwc2rJCF6pGX8VpxaTj1WmqzTPCmElxWaJ0SYIzI00bz191WYU")
-os.environ.setdefault("STRIPE_SECRET_KEY", "sk_test_51MVbQwJDbOhf0bAhWMuIR6c7NnBQlui8kyk5fuIMb51A0ENpS2KogXVBfqNMnbCRX0W9zDvVsooYDkNdxhHq0mkF00L3q27myj")
-os.environ.setdefault("STRIPE_WH_SECRET", "whsec_zp0rjHvFU5Uy7QHxAafDGcppETUsoArN")
+os.environ.setdefault("CLOUDINARY_URL", "<insert-your-own>")
+os.environ.setdefault("DATABASE_URL", "<insert-your-own>")
+os.environ.setdefault("EMAIL_HOST_PASS", "<insert-your-own>")
+os.environ.setdefault("EMAIL_HOST_USER", "<insert-your-own>")
+os.environ.setdefault("SECRET_KEY", "<insert-your-own>")
+os.environ.setdefault("STRIPE_PUBLIC_KEY", "<insert-your-own>")
+os.environ.setdefault("STRIPE_SECRET_KEY", "<insert-your-own>")
+os.environ.setdefault("STRIPE_WH_SECRET", "<insert-your-own>")
 
 # local environment only (do not include these in production/deployment!)
 os.environ.setdefault("DEBUG", "True")
