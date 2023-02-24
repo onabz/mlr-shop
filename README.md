@@ -625,6 +625,6 @@ Use this space to discuss any differences between the local version you've devel
 
 ### Acknowledgements
 
-- I would like to thank my Mentor Tim Nelson for his invaluable support all through this project. I would not have been able to put all this together if not for his patience and insight.
+- I would like to thank my Mentor [Tim Nelson](https://github.com/TravelTimN) for his invaluable support all through this project. I would not have been able to put all this together if not for his patience and insight.
 - I would like to thank [Student Care](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopmentecommerce/studentcare) for their regular check up on me to ensure that I was always on track to completing this project and to reassure me that they were always available if I needed any help.
 - I would like to thank the good people of [Tutor support](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopmentecommerce/tutor) for always being very polite and patient with me in resolving issues that I raised with them while working on this project. 
