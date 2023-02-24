@@ -15,7 +15,7 @@ def all_dolls(request):
 
     if request.GET:
         if 'dolltype' in request.GET:
-            dolltypes = request.GET['dolltype']
+            dolltypes = request.GET['dolltype'].replace('_', ' ')
             dolls = dolls.filter(dolltype__name__icontains=dolltypes)
 
         if 'q' in request.GET:
