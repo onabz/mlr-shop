@@ -21,3 +21,13 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | password reset | [W3C Validation](https://validator.w3.org/nu/?doc=https://mlr-shop.herokuapp.com/accounts/password/reset/) | ![screenshot](documentation/testing/validation/html-pw-reset.png) | Section lacks heading. Trailing slash on void elements. |
 | doll details | [W3C Validation](https://validator.w3.org/nu/?doc=https://mlr-shop.herokuapp.com/dolls/1) | ![screenshot](documentation/testing/validation/html-doll-details.png) | Section lacks heading |
 
+### CSS
+
+I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
+
+| App | File | Jigsaw URL | Screenshot | Notes |
+| --- | --- | --- | --- | --- |
+| static | [base.css](static/css/base.css) | [Jigsaw Validation](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmlr-shop.herokuapp.com) | ![screenshot](documentation/testing/validation/css-mlr-shop.png) | 712 warnings from third-party code |
+| profiles | [profile.css](profiles/static/profiles/css/profile.css) | N/A | ![screenshot](documentation/testing/validation/css-profile.png) | |
+| checkout | [checkout.css](checkout/static/checkout/css/checkout.css) | N/A | ![screenshot](documentation/testing/validation/css-checkout.png) | 1 warning |
+
