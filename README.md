@@ -497,15 +497,15 @@ Deployment steps are as follows, after account setup:
 
 | Key | Value |
 | --- | --- |
-| `CLOUDINARY_URL` | "<insert-your-own>" |
-| `DATABASE_URL` | "<insert-your-own>" |
+| `CLOUDINARY_URL` | "insert-your-own" |
+| `DATABASE_URL` | "insert-your-own" |
 | `DISABLE_COLLECTSTATIC` | 1 (*this is temporary, and can be removed for the final deployment*) |
-| `EMAIL_HOST_PASS` | "<insert-your-own>" |
-| `EMAIL_HOST_USER` | "<insert-your-own>" |
-| `SECRET_KEY` | "<insert-your-own>" |
-| `STRIPE_PUBLIC_KEY` | "<insert-your-own>" |
-| `STRIPE_SECRET_KEY` | "<insert-your-own>" |
-| `STRIPE_WH_SECRET` | "<insert-your-own>" |
+| `EMAIL_HOST_PASS` | "insert-your-own" |
+| `EMAIL_HOST_USER` | "insert-your-own" |
+| `SECRET_KEY` | "insert-your-own" |
+| `STRIPE_PUBLIC_KEY` | "insert-your-own" |
+| `STRIPE_SECRET_KEY` | "insert-your-own" |
+| `STRIPE_WH_SECRET` | "insert-your-own" |
 
 Heroku needs two additional files in order to deploy properly.
 - requirements.txt
@@ -549,14 +549,14 @@ Sample `env.py` file:
 ```python
 import os
 
-os.environ.setdefault("CLOUDINARY_URL", "<insert-your-own>")
-os.environ.setdefault("DATABASE_URL", "<insert-your-own>")
-os.environ.setdefault("EMAIL_HOST_PASS", "<insert-your-own>")
-os.environ.setdefault("EMAIL_HOST_USER", "<insert-your-own>")
-os.environ.setdefault("SECRET_KEY", "<insert-your-own>")
-os.environ.setdefault("STRIPE_PUBLIC_KEY", "<insert-your-own>")
-os.environ.setdefault("STRIPE_SECRET_KEY", "<insert-your-own>")
-os.environ.setdefault("STRIPE_WH_SECRET", "<insert-your-own>")
+os.environ.setdefault("CLOUDINARY_URL", "insert-your-own")
+os.environ.setdefault("DATABASE_URL", "insert-your-own")
+os.environ.setdefault("EMAIL_HOST_PASS", "insert-your-own")
+os.environ.setdefault("EMAIL_HOST_USER", "insert-your-own")
+os.environ.setdefault("SECRET_KEY", "insert-your-own")
+os.environ.setdefault("STRIPE_PUBLIC_KEY", "insert-your-own")
+os.environ.setdefault("STRIPE_SECRET_KEY", "insert-your-own")
+os.environ.setdefault("STRIPE_WH_SECRET", "insert-your-own")
 
 # local environment only (do not include these in production/deployment!)
 os.environ.setdefault("DEBUG", "True")
