@@ -16,8 +16,7 @@ def all_dolls(request):
     if request.GET:
         if 'dolltype' in request.GET:
             dolltypes = request.GET['dolltype']
-            dolls = dolls.filter(dolltype__name__in=dolltypes)
-            dolltypes = DollType.objects.filter(name__in=dolltypes)
+            dolls = dolls.filter(dolltype__name__icontains=dolltypes)
 
         if 'q' in request.GET:
             query = request.GET['q']
