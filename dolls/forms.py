@@ -1,4 +1,5 @@
 from django import forms
+from django_summernote.widgets import SummernoteWidget
 from .models import Doll, DollType
 
 
@@ -7,6 +8,11 @@ class DollForm(forms.ModelForm):
     class Meta:
         model = Doll
         fields = '__all__'
+        widgets = {
+            'description': SummernoteWidget(),
+            'safety_note': SummernoteWidget(),
+            'care_love_instructions': SummernoteWidget(),
+        }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
