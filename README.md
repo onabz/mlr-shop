@@ -266,6 +266,18 @@ Below are sketched images of how I planned to layout the website design. You wil
 
 ![screenshot](documentation/feature01.png)
 
+- **404 Page**
+
+    - Page Not Found.
+
+![screenshot](documentation/testing/404.png)
+
+- **500 Page**
+
+    - Internal Server Error.
+
+![screenshot](documentation/testing/500.png)
+
 ### Future Features
 
 - Categories
