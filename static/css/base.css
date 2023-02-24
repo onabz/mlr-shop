@@ -4,7 +4,7 @@ html, body {
 
 body {
     /* background-color: antiquewhite; */
-    background: url('../img/home_image.png') no-repeat center center fixed;
+    background: url('https://res.cloudinary.com/dxnatg2ni/image/upload/v1677164170/static/img/home_image.396c0fc6e37c.png') no-repeat center center fixed;
     background-size: cover;
     color: black;
     font-family: 'lato';
