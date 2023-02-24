@@ -82,6 +82,12 @@
                     <hr>
                 </div>
                 {% endif %}
+                {% empty %}
+                    <div class="row text-center mx-auto text-danger">
+                        <div class="col">
+                            <h4>No Dolls Found</h4>
+                        </div>
+                    </div>
                 {% endfor %}
             </div>
         </div>
