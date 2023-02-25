@@ -240,9 +240,15 @@ Below are sketched images of how I planned to layout the website design. You wil
 
 - **Footer**
 
-    - It contains input fields for signing up, a signup button and a back to login button incase you already have an account.
+    - The footer is located at the very bottom of every page on the site. It houses the social media icons, making them readily available on all pages. 
 
 ![Footer](documentation/testing/5-footer.png)
+
+- **Social media icons**
+
+    - These icons are located within the footer. When clicked on, they open in new tabs so as not to disrupt the current page the user is on. They include the slack icon, linkedin icon and the github icon.
+
+![Footer](documentation/testing/5-social-media-icons.png)
 
 - **Shop page**
 
@@ -258,26 +264,26 @@ Below are sketched images of how I planned to layout the website design. You wil
     - When a user clicks on any of the dolls on the shop page, it takes them to the doll detail page which shows all the details about the doll from its price to its description.
     - It also has a quantity input page for selecting the quantity of that particular doll needed. It also has the add to bag button and the keep shopping button.
 
-![screenshot](documentation/testing/5-doll-detail-pg1.png)
-![screenshot](documentation/testing/5-doll-detail-pg2.png)
+![Doll detail page](documentation/testing/5-doll-detail-pg1.png)
+![Doll detail page](documentation/testing/5-doll-detail-pg2.png)
 
 - **Shop by doll dropdown menu**
 
     - This dropdown menu shows links to each type of doll available. Once clicked on and a doll is selected, it takes the user to the dolls detail page 
 
-![screenshot](documentation/testing/5-nav-link-2.png)
+![Shop by doll dropdown menu](documentation/testing/5-nav-link-2.png)
 
 - **Contact link**
 
     - This is essentially the contact page were customers can contact the store owner about anything.
 
-![screenshot](documentation/testing/5-contactform.png)
+![Contact link](documentation/testing/5-contactform.png)
 
 - **Newsletter link**
 
     - This page allows customers to subcribe for regular newsletters from the site about important information such as new deals, sales and so on.
 
-![screenshot](documentation/testing/5-newsletter-subscribe.png)
+![Newsletter link](documentation/testing/5-newsletter-subscribe.png)
 
 - **Checkout page**
 
@@ -285,15 +291,15 @@ Below are sketched images of how I planned to layout the website design. You wil
     - The left section of the page contains the fields for inputing the details and the right section contains the order summary.
     - Below are the adjust bag button for adjusting the bag and the complete order button to complete the order.
 
-![screenshot](documentation/testing/5-checkout-pg1.png)
-![screenshot](documentation/testing/5-checkout-pg1.png)
+![Checkout page](documentation/testing/5-checkout-pg1.png)
+![Checkout page](documentation/testing/5-checkout-pg1.png)
 
 - **Order confirmation page**
 
     - This page shows the detailed order summary information and also shows that a confirmation email has been sent to the relevant email. It has a continue shopping button at the buttom.
 
-![screenshot](documentation/testing/5-order-confirmation-pg.png)
-![screenshot](documentation/testing/5-order-confirmation-pg2.png)
+![Order confirmation page](documentation/testing/5-order-confirmation-pg.png)
+![Order confirmation page](documentation/testing/5-order-confirmation-pg2.png)
 
 - **Success Messaging**
 
@@ -302,40 +308,46 @@ Below are sketched images of how I planned to layout the website design. You wil
     - A success message also pops up when a user adds a doll to the shopping bag. In this case the success message also shows the name of the doll, quantity and total. It also gives the user to go straight to the checkout page.
     - A success message pops up when a doll is removed from the shopping bag.
 
-![screenshot](documentation/testing/5-order-confirmation-success-msg-pg.png)
-![screenshot](documentation/testing/5-order-confirmation-pg2.png)
-![screenshot](documentation/testing/5-success-message-checkout.png)
-![screenshot](documentation/testing/5-success-message-checkout2.png)
+![Order confirmation success message](documentation/testing/5-order-confirmation-success-msg-pg.png)
+![Order confirmation](documentation/testing/5-order-confirmation-pg2.png)
+![Checkout success message](documentation/testing/5-success-message-checkout.png)
+![Checkout success message](documentation/testing/5-success-message-checkout2.png)
 
 - **Error messaging**
 
     - Just like the success messaging above you also have the error messaging if an invalid action is performed.
 
-![screenshot](documentation/testing/5-error-msg1.png)
+![Error messaging](documentation/testing/5-error-msg1.png)
 
 - **Edit page**
 
     - This page can only be accessed by an authorized user or store owner. It allows the user to edit the details of any doll. It populates all the fields wiht the existing details about the doll allowing the user to change any detail. An update button is situated below to save the changes. A cancel button is also present.
 
-![screenshot](documentation/testing/5-edit-button.png)
+![Edit page](documentation/testing/5-edit-button.png)
 
 - **Delete button**
 
     - This allows the user to delete a doll.
 
-![screenshot](documentation/feature01.png)
+![Delete button](documentation/feature01.png)
 
 - **404 Page**
 
     - Page Not Found.
 
-![screenshot](documentation/testing/404.png)
+![404 Page](documentation/testing/404.png)
 
 - **500 Page**
 
     - Internal Server Error.
 
-![screenshot](documentation/testing/500.png)
+![500 Page](documentation/testing/500.png)
+
+- **Admin Page**
+
+    - This is the admin page where the admin user can manage the site from the backend.
+
+![Admin Page](documentation/testing/5-admin-pg.png)
 
 ### Future Features
 
@@ -390,11 +402,11 @@ It also helped with milestone iterations on a weekly basis.
 
 - [Open Issues](https://github.com/onabz/mlr-shop/issues)
 
-    ![screenshot](documentation/testing/gh-issue-opened.png)
+    ![Open Issue](documentation/testing/gh-issue-opened.png)
 
 - [Closed Issues](https://github.com/onabz/mlr-shop/issues?q=is%3Aissue+is%3Aclosed)
 
-    ![screenshot](documentation/testing/gh-issue-closed.png)
+    ![Closed Issue](documentation/testing/gh-issue-closed.png)
 
 ### MoSCoW Prioritization
 
@@ -414,8 +426,7 @@ such as monthly/annual subscriptions.
 
 It is still in its early development stages, although it already has a newsletter, and links for social media marketing.
 
-Social media can potentially build a community of users around the business, and boost site visitor numbers,
-especially when using larger platforms such a Facebook.
+Social media can potentially build a community of users around the business, and boost site visitor numbers, especially when using larger platforms such a Facebook.
 
 A newsletter list can be used by the business to send regular messages to site users.
 For example, what items are on special offer, new items in stock,
@@ -465,11 +476,15 @@ Further links for future implementation:
 Creating a strong social base (with participation) and linking that to the business site can help drive sales.
 Using more popular providers with a wider user base, such as Facebook, typically maximizes site views.
 
+Below is a link to a live Facebook business page with the same ethos as this site.
+
+[Facebook Business page](https://www.facebook.com/profile.php?id=100068065985462)
+
 I've created a mockup Facebook business account using the
 [Balsamiq template](https://code-institute-org.github.io/5P-Assessments-Handbook/files/Facebook_Mockups.zip)
 provided by Code Institute.
 
-![screenshot](documentation/mockup-facebook.png)
+![screenshot](documentation/testing/fb-business-pg-mockup.png)
 
 ### Newsletter Marketing
 
@@ -477,9 +492,6 @@ I have incorporated a newsletter sign-up form on my application, to allow users 
 email address if they are interested in learning more. 
 
 [Newsletter Signup Page](documentation/testing/5-newsletter-subscribe.png)
-
-- Consider using the same `send_mail()` functionality used on the `webhook_handler.py` file.
-    - You can trigger an email sent out to subscribed users when new products are added to the site!
 
 ## Testing 
 
@@ -665,7 +677,7 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
+There are currently no differences between the local site and the development site.
 
 ## Credits 
  
