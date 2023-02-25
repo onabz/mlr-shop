@@ -126,12 +126,12 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Mobile | ![screenshot](documentation/lighthouse-home-mobile.png) | Chrome extensions negatively affected this page's load performance |
-| Home | Desktop | ![screenshot](documentation/lighthouse-home-desktop.png) | Few warnings |
+| Home | Mobile | ![screenshot](documentation/testing/lighthouse-home-mobile.png) | Chrome extensions negatively affected this page's load performance |
+| Home | Desktop | ![screenshot](documentation/testing/lighthouse-home-desktop.png) | Few warnings |
 | Signup | Mobile | ![screenshot](documentation/testing/lighthouse-signup-mobile.png) | Chrome extensions negatively affected this page's load |
 | Signup | Desktop | ![screenshot](documentation/testing/lighthouse-signup-desktop.png) | Few warnings |
 | Login | Mobile | ![screenshot](documentation/testing/lighthouse-login-mobile.png) | Chrome extensions negatively affected this page's load performance |
-| | Login | Desktop | ![screenshot](documentation/testing/lighthouse-login-desktop.png) | Few warnings |
+| Login | Desktop | ![screenshot](documentation/testing/lighthouse-login-desktop.png) | Few warnings |
  | Bag | Mobile | ![screenshot](documentation/testing/lighthouse-bag-mobile.png) | Chrome extensions negatively affected this page's load performance |
 | Bag | Desktop | ![screenshot](documentation/testing/lighthouse-bag-desktop.png) | Few warnings |
 | Dolls | Mobile | ![screenshot](documentation/testing/lighthouse-Dolls-mobile.png) | Chrome extensions negatively affected this page's load performance |
@@ -180,10 +180,20 @@ Defensive programming was manually tested with the below user acceptance testing
 | --- | --- | --- | --- | --- |
 | Home Page | | | | |
 | | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery Page | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
+| | Click in the Search field | Allow input of search queries for a doll available on the site | Pass | |
+| | Click on the Search button after input in search field| Redirects user to page showing doll(s) typed in search field | Pass | |
+| | Click on the Search button without any input in the search field | Error warning message appears saying user did not enter any search query | Pass | User must input a search query in the search field before clicking on the Search button |
+| | Click on Home link in navbar collapse menu | Redirection to Home page | Pass | This is tested on mobile devices | 
+| | Click on Shop link | Redirection to Dolls page | Pass | |
+| | Click on Shop By Doll link | Drop down menu appears with links to all types of dolls | Pass | |
+| | Click on More link | Drop down menu appears with links to the Contact page and Newsletter page | Pass | |
+| | Click on My Account link | Drop down menu appears with links to the Register page and the Login page when no user is logged in; the My Profile page and Logout page when a regular user is logged in and the Doll Management page, Send Newsletter page, My Profile Page and the Logout page when a super user is logged in | Pass | |
+| | Refresh Home page | Affirmation messages change | Pass | Each time the home page is refreshed, the affirmation messages change randomly between 7 different messages saved. |
+| | Click on the shopping bag | Redirects to shopping bag page | Pass |  |
+| | Click on Social media icons | Redirection to relevant Social Media pages in new tabs | Pass |  |
+| All Dolls Page | | | | |
+| | Click on a doll by regular user | Redirection to the Doll Detail page | Pass | Regular user has no access to the edit or delete links |
+| | Click on a doll by super user | Redirection to the Doll Detail page | Pass | Super user has access to the edit and delete links |
 | Contact Page | | | | |
 | | Click on Contact link in navbar | Redirection to Contact page | Pass | |
 | | Enter first/last name | Field will accept freeform text | Pass | |
@@ -204,7 +214,25 @@ Defensive programming was manually tested with the below user acceptance testing
 | Log Out | | | | |
 | | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
 | | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
+| Newsletter | | | | |
+| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
+| | Click Confirm Logout button | Redirects user to home page | Pass | |
+| Social Media Icons | | | | |
+| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
+| | Click Confirm Logout button | Redirects user to home page | Pass | |
+| Add A Doll | | | | |
+| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
+| | Click Confirm Logout button | Redirects user to home page | Pass | |
+| Edit A Doll | | | | |
+| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
+| | Click Confirm Logout button | Redirects user to home page | Pass | |
+| Shopping Bag | | | | |
+| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
+| | Click Confirm Logout button | Redirects user to home page | Pass | |
+| Send Newsletter | | | | |
+| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
+| | Click Confirm Logout button | Redirects user to home page | Pass | |
+| My Profile | | | | |
 | | Click on Profile button | User will be redirected to the Profile page | Pass | |
 | | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
 | | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
