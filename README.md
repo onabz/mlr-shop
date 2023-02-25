@@ -15,7 +15,7 @@ I hope that everyone black, brown or white, that have children, will recognize t
 
 Let us educate our children to celebrate and love our differences.
 
-![Responsive Mockup]()
+![Responsive Mockup](documentation/testing/amiresponsive-pg.png)
 
 The Responsive Mockup image above shows how responsive the MLR-SHOP is across various device screen sizes ranging from mobile devices to large monitor screens. The Mum Loves Representation shop is well layed out with a bold font style used across all pages. The buttons are very legible on all the screen sizes. 
 
@@ -63,20 +63,57 @@ I chose to use the Lato google font for the primary headers and titles and also 
 
 Below are sketched images of how I planned to layout the website design. You will notice that the final design of the website is slightly different from my initial sketches for some pages which is because the template i used was not an exact match to my sketches.
 
-![Home Template Wireframe](documentation/wireframes/home-pg.jpg)
-![All Dolls Template Wireframe](documentation/wireframes/all-dolls-pg (2).jpg)
-![Doll Detail Template Wireframe](documentation/wireframes/doll-detail-pg.jpg)
-![Shopping Bag Template Wireframe](documentation/wireframes/shopping-bag-pg.jpg)
-![Checkout Template Wireframe](documentation/wireframes/checkout-pg.jpg)
-![My Profile Template Wireframe](documentation/wireframes/logout-pg.jpg)
-![Logout Template Wireframe](documentation/wireframes/logout-pg.jpg)
-![Login Template Wireframe](documentation/wireframes/login-pg.jpg)
-![Register Template Wireframe](documentation/wireframes/register-pg.jpg)
-![Subscribe To Newsletter Template Wireframe](documentation/wireframes/shopping-bag-pg.jpg)
-![Sendout Newsletter Template Wireframe](documentation/wireframes/send-newsletter.jpg)
-![Add New Doll Template Wireframe](documentation/wireframes/add-doll-pg.jpg)
-![Edit Doll Template Wireframe]()
-![Contact Template Wireframe](documentation/wireframes/contact-pg.jpg)
+### Home Page Wireframes
+
+![Home Page Wireframe](documentation/wireframes/home-pg.jpg)
+
+### All Dolls Page Wireframe
+
+![All Dolls Page Wireframe](documentation/wireframes/all-dolls-pg.jpg)
+
+### Doll Detail Page Wireframe
+
+![Doll Detail Page Wireframe](documentation/wireframes/doll-detail-pg.jpg)
+
+### Shopping Bag Page Wireframe
+
+![Shopping Bag Page Wireframe](documentation/wireframes/shopping-bag-pg.jpg)
+
+### Checkout Page Wireframe
+
+![Checkout Page Wireframe](documentation/wireframes/checkout-pg.jpg)
+
+### My Profile Page Wireframe
+
+![My Profile Page Wireframe](documentation/wireframes/logout-pg.jpg)
+
+### Logout Page Wireframe
+
+![Logout Page Wireframe](documentation/wireframes/logout-pg.jpg)
+
+### Login Page Wireframe
+
+![Login Page Wireframe](documentation/wireframes/login-pg.jpg)
+
+### Register Page Wireframe
+
+![Register Page Wireframe](documentation/wireframes/register-pg.jpg)
+
+### Subscribe To Newsletter Page Wireframe
+
+![Subscribe To Newsletter Page Wireframe](documentation/wireframes/shopping-bag-pg.jpg)
+
+### Sendout Newsletter Page Wireframe
+
+![Sendout Newsletter Page Wireframe](documentation/wireframes/send-newsletter.jpg)
+
+### Add New Doll Page Wireframe
+
+![Add New Doll Page Wireframe](documentation/wireframes/add-doll-pg.jpg)
+
+### Contact Page Wireframe
+
+![Contact Page Wireframe](documentation/wireframes/contact-pg.jpg)
 
 ## Features 
 
@@ -86,6 +123,7 @@ Below are sketched images of how I planned to layout the website design. You wil
 
     - The home page features a nav bar that contains the logo to the far left, a search bar to the center under which the nav links are located, a my account dropdown menu and a shopping bag link to the far right. 
     - The home page features a background image with a hero text  and a shop now button.
+    - It also features an affirmation card just below the shop now button that displays random affirmation messages that fit with the ethos of the site.
 
 ![Home page](documentation/testing/5-home-page.png)
 
@@ -114,35 +152,35 @@ Below are sketched images of how I planned to layout the website design. You wil
 
     - This link is a drop down menu that contains links to the doll management page, send newsletter, my profile page, and the login/logout/signup pages.
 
-![screenshot](documentation/testing/5-my-account-page.png)
-![screenshot](documentation/testing/5-my-account-page2.png)
+![My Account link](documentation/testing/5-my-account-page.png)
+![My Account link](documentation/testing/5-my-account-page2.png)
 
 - **Doll Management page**
 
     - The doll management page is where a super user can add a new doll to the site. It contains all the neccessary fields to assign a new doll to the site. It also contains the on sale field to mark a doll as on sale.
 
-![screenshot](documentation/testing/5-doll-mgt-pg1.png)
-![screenshot](documentation/testing/5-doll-mgt-pg2.png)
-![screenshot](documentation/testing/5-doll-mgt-pg3.png)
+![Doll Management page](documentation/testing/5-doll-mgt-pg1.png)
+![Doll Management page](documentation/testing/5-doll-mgt-pg2.png)
+![Doll Management page](documentation/testing/5-doll-mgt-pg3.png)
 
 - **Send Newsletter**
 
     - The send Newsletter page allows the store owner to send newsletters to all subscribers of the site. Only authorised accounts have access to this page.
 
-![screenshot](documentation/testing/5-send-newsletter.png)
+![Send Newsletter](documentation/testing/5-send-newsletter.png)
 
 - **My Profile page**
 
     - My profile page stores the delivery information for a specific user and that user's order history. It also contains a button for the user to update their delivery information.
 
-![screenshot](documentation/testing/5-my-profile-pg.png)
+![My Profile page](documentation/testing/5-my-profile-pg.png)
 
 - **Logout page**
 
     - The logout page allows a user to logout of his account. 
     - It contains a sign out button for a user to logout.
 
-![screenshot](documentation/testing/5-logout-pg.png)
+![Logout page](documentation/testing/5-logout-pg.png)
 
 - **Login page**
 
@@ -150,17 +188,17 @@ Below are sketched images of how I planned to layout the website design. You wil
     - It has a sign in button and a home button to return back to the home page without login in.
     - It also contains a remember me checkbox to save the user login details for ease of login.
 
-![screenshot](documentation/testing/5-login-pg.png)
+![Login page](documentation/testing/5-login-pg.png)
 
 - **Register page**
 
     - It contains input fields for signing up, a signup button and a back to login button incase you already have an account.
 
-![screenshot](documentation/testing/5-register-pg.png)
+![Register page](documentation/testing/5-register-pg.png)
 
-- **Random Message of Empowerment**
+- **Affirmation messages**
 
-    - On the home page, every page refresh, there is a random message from MLR. These are randomly selected from a custom model each time. There are 7 currently.
+    - On the home page, with every page refresh, there is a random message from MLR. These are randomly selected from a custom model each time. There are 7 currently.
 
     - I can do anything I set my mind to.
     - I am an original.
@@ -170,7 +208,8 @@ Below are sketched images of how I planned to layout the website design. You wil
     - I am capable of amazing things.
     - I start with a positive mindset.
 
-![screenshot](documentation/testing/sayings.png)
+![Affirmation card](documentation/testing/5-affirmation-card.png)
+![Affirmation messages](documentation/testing/5-affirmation-messages.png)
 
 - **Shopping bag**
 
@@ -181,32 +220,38 @@ Below are sketched images of how I planned to layout the website design. You wil
     - At the bottom of the page you have the Grand total, keep shopping button and secure checkout button.
     - The shopping bag link also shows the current value of the shopping bag at anytime.
 
-![screenshot](documentation/testing/5-shopping-bag1.png)
-![screenshot](documentation/testing/5-shopping-bag2.png)
-![screenshot](documentation/testing/5-shopping-bag3.png)
-![screenshot](documentation/testing/5-shopping-bag4.png)
+![Shopping bag](documentation/testing/5-shopping-bag1.png)
+![Shopping bag](documentation/testing/5-shopping-bag2.png)
+![Shopping bag](documentation/testing/5-shopping-bag3.png)
+![Shopping bag](documentation/testing/5-shopping-bag4.png)
 
 
 - **Search bar**
 
     - The search bar helps the user search for doll any doll across the site. It is clearly postioned at the center of the nav bar.
 
-![screenshot](documentation/testing/5-search-bar.png)
+![Search bar](documentation/testing/5-search-bar.png)
 
 - **Shop now button**
 
     - This button takes users to the shop page that shows all the dolls available for sale on the site. On top of it is the hero text that draws users attention to the shop now button.
 
-![screenshot](documentation/testing/5-shopnow-button.png)
+![Shop now button](documentation/testing/5-shopnow-button.png)
+
+- **Footer**
+
+    - It contains input fields for signing up, a signup button and a back to login button incase you already have an account.
+
+![Footer](documentation/testing/5-footer.png)
 
 - **Shop page**
 
     - This page shows all the dolls available for sale on the site. It has a heading named Dolls.
     - It shows each dolls name and price. Dolls on sale are clearly marked in red font colour. 
 
-![screenshot](documentation/testing/5-doll-pg1.png)
-![screenshot](documentation/testing/5-doll-pg2.png)
-![screenshot](documentation/testing/5-doll-pg3.png)
+![Shop page](documentation/testing/5-doll-pg1.png)
+![Shop page](documentation/testing/5-doll-pg2.png)
+![Shop page](documentation/testing/5-doll-pg3.png)
 
 - **Doll detail page**
 
