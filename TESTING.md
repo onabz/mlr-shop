@@ -147,33 +147,6 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 ## Defensive Programming
 
-Defensive programming (defensive design) is extremely important!
-
-When building projects that accept user inputs or forms, you should always test the level of security for each.
-Examples of this could include (not limited to):
-
-Forms:
-- Users cannot submit an empty form
-- Users must enter valid email addresses
-
-PP3 (Python-only):
-- Users must enter a valid letter/word/string when prompted
-- Users must choose from a specific list only
-
-Flask/Django:
-- Users cannot brute-force a URL to navigate to a restricted page
-- Users cannot perform CRUD functionality while logged-out
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
-- Non-Authenticated users should not be able to access pages that require authentication
-- Standard users should not be able to access pages intended for superusers
-
-You'll want to test all functionality on your application, whether it's a standard form,
-or uses CRUD functionality for data manipulation on a database.
-Make sure to include the `required` attribute on any form-fields that should be mandatory.
-Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
-
-You should include any manual tests performed, and the expected results/outcome.
-
 Defensive programming was manually tested with the below user acceptance testing:
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
@@ -194,18 +167,64 @@ Defensive programming was manually tested with the below user acceptance testing
 | All Dolls Page | | | | |
 | | Click on a doll by regular user | Redirection to the Doll Detail page | Pass | Regular user has no access to the edit or delete links |
 | | Click on a doll by super user | Redirection to the Doll Detail page | Pass | Super user has access to the edit and delete links |
+| | Click on the edit link | Redirection to the edit a doll page | Pass | The fields on this page are prepopulated with their current values and so can be edited and saved |
+| | Click on the delete link | The doll is immediatley deleted | Pass | After delete the super user is redirected back to the dolls page |
+| | Click on doll image by a regular user | Redirection to doll detail page | Pass | Regular user as no access to the edit or delete links on this page |
+| | Click on doll image by a super user | Redirection to doll detail page | Pass | Super user as access to the edit or delete links on this page |
+| | Click on quantity input field | Cursor appears allowing user to input quantity. Buttons to increase or decrease the quantity also appear allowing for alternative method of quantity input | Pass |  |
+| | Typing 0 value into quantity input field | Warning message appears saying value must be greater than or equal to 1 | Pass | User must enter a value greater than 0 before they can add any item to the shopping bag |
+| | Not entering any value into quantity input field | Redirection to custom error 500 page | Pass |  |
+| | Click on the return to shop button on the error 500 page | Redirection to the dolls page | Pass |  |
+| | Click on keep shopping button | Redirection back to dolls page | Pass |  |
+| | Click on add to bag button | Success message shows under the shopping bag icon with summary of item(s) added, total price, go to secure checkout button and a button to close the message | Pass |  |
+| | Click on go to secure checkout button | Redirection to shopping bag page | Pass | Shopping bag icon shows current total price of item(s) added  |
+| Shopping Bag | | | | |
+| | Click update button | Success message appears reflecting change in quantity and price | Pass |  |
+| | Click remove button | Success message appears showing name of item removed with button to close message | Pass | Message closes when button is clicked |
+| | Click secure checkout button | Redirection to checkout page | Pass |  |
+| | Click on keep shopping button | Redirection back to dolls page | Pass |  |
+| Checkout Page | | | | |
+| | Click complete order button without filling anyone of the required fields | Warning saying please fill out required field | Pass | An order will not be submitted except all the required fields are filled |
+| | Not entering the @ value in the email field | Warning saying please include an '@' in email address field | Pass | You must enter a correct email address before you can complete order |
+| | Not entering .com in the email field | Warning saying your email address is invalid appears in red just below the form | Pass | You must enter a correct email address before you can complete order |
+| | Not entering complete card number in card number field | Warning saying your card number is invalid | Pass | Card number entered appears in red along with warning to clearly indicate error |
+| | Not entering card zip code in zip code field | Warning saying your postal code is incomplete | Pass |  |
+| | Entering incorrect expiration date | Warning saying your cards's expiration year is in the past | Pass |  |
+| | Not entering card's security code in cvc field | Warning saying your card's security code is incomplete | Pass |  |
+| | Click on item's image under order summary | Redirection back to the dolls' detail page | Pass |  |
+| | Click on adjust bag button | Redirection back to the shopping bag page | Pass |  |
+| | Click on complete order button | Redirection to the order confirmation page. A success message also appears showing order number and message that confirmation email has been sent to email address given | Pass |  |
+| | Check email inbox for receipt of confirmation email | Receipt of confirmation email | Pass | A confirmation email was received with relevant information |
+| | Click on continue shopping button | Redirection back to the dolls page | Pass |  |
+| Shop By Doll | | | | |
+| | Click 'shop by doll' dropdown menu | Dropdown menu appears showing list of links to dolls available | Pass |  |
+| | Click on any doll link in the shop by doll dropdown menu | Redirection to a page showing image, name and price of the doll selected | Pass |  |
+| | Click on doll image of doll selected from shop by doll dropdown menu | Redirection to the doll detail page of the doll selected | Pass |  |
+| | Click 'Confirm Logout' button | Redirects user to home page | Pass | |
 | Contact Page | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
+| | Click on 'Contact' from 'more' dropdown menu | Redirection to Contact page | Pass | |
 | | Enter first/last name | Field will accept freeform text | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
 | | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
+| | Click the Submit button | Redirects user to home page | Pass | Success message appears letting user know that details have been sent |
+| Newsletter | | | | |
+| | Click on Newsletter from 'more' dropdown menu  | Redirects user to signup to newsletter page | Pass |  |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| | Check admin page for receipt of email address | Email address appears under email field on newsletter view on admin site  | Pass | |
+| | Click the Submit button | Redirects user to home page | Pass | Success message appears letting user know that subscription was successful |
+| Add A Doll | | | | |
+| | Click on doll management link from 'my account' dropdown menu | Redirection to 'add a new doll' page | Pass | All fields on this page are required fields |
+| | Click complete order button without filling anyone of the required fields | Warning saying please fill out required field | Pass | An order will not be submitted except all the required fields are filled |
+| | Enter more than 6 digits in price field | Warning appears saying 'ensure that there are no more than 6 digits in total' | Pass | Confirms logout first |
+| | Click on Add Doll button without selecting an image | Should require you to select an image before you can add a doll | Fail | You should not be able to add a doll without selecting an image |
+| | Click Cancel button | Redirection back to the Dolls page | Pass |  |
+| Register | | | | |
+| | Click on Register from 'my account' dropdown menu | Redirection to Sign Up page | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
 | | Enter valid password (twice) | Field will only accept password format | Pass | |
+| | Enter weak password | Notification will appear stating that password is too similar, too short or too common | Pass | |
 | | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
+| | Confirm email | Redirects user to blank Sign In page | Pass | Once user logs in he is redirected to the home page |
 | Log In | | | | |
 | | Click on the Login link | Redirection to Login page | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
@@ -214,32 +233,23 @@ Defensive programming was manually tested with the below user acceptance testing
 | Log Out | | | | |
 | | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
 | | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Newsletter | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Social Media Icons | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Add A Doll | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Edit A Doll | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Shopping Bag | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
+| Password Reset | | | | |
+| | Click Forgot Password? link | Redirects user to password reset page | Pass | Message saying enter your email address appears with email input field, 'back to login' button and 'reset my password' button |
+| | Click reset my password button | Send out email with link allowing you to reset password | Pass | Link appeasrs in email inbox |
+| | Click link in email to reset password| Redirects to Change password page | Pass | Password input fields appera for user to enter new password |
+| | Click reset password button | Message appears saying password has been changed | Pass | User can then click on the login in button and enter new password |
 | Send Newsletter | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
+| | Click Newsletter link | Redirects superuser to send newsletter page | Pass | Regular users have no access to this link |
+| | Click on send newsletter button wihtout filling any required field | Warning appears for superuser to fill out the fields | Pass | All fields are required |
+| | Click on send newsletter button | Page reloads with success message appearing saying that message has been sent to mail list | Pass | Email is received by mail list |
+| Social Media Icons | | | | |
+| | Click soicial media icon in footer | Redirects user to relevant social media page in a new tab | Pass | Relevant social media page opens up in new tab |
 | My Profile | | | | |
 | | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
+| | Click on the Update imformation button | Message appears saying user profile has been updated successfully | Pass | |
+| | Click on the order number | User will be redirected to the order confirmation page for that particular order with an alert indicating that the order is past order | Pass | |
 | | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
 
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
 
 ## User Story Testing
 
