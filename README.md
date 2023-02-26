@@ -196,6 +196,14 @@ Below are sketched images of how I planned to layout the website design. You wil
 
 ![Register page](documentation/testing/5-register-pg.png)
 
+- **Passwork reset page**
+
+    - A user who has forgotten his password can reset it by providing his email address. 
+    - A password reset link is sent to the user's email address and once the link is clicked on, the user is redirected another password reset page where he can input his new password.
+    - The user is then redirected to the login page where the user can login with his new credentials.
+
+![Passwork reset page](documentation/testing/5-password-reset-pg.png)
+
 - **Affirmation messages**
 
     - On the home page, with every page refresh, there is a random message from MLR. These are randomly selected from a custom model each time. There are 7 currently.
@@ -267,9 +275,15 @@ Below are sketched images of how I planned to layout the website design. You wil
 ![Doll detail page](documentation/testing/5-doll-detail-pg1.png)
 ![Doll detail page](documentation/testing/5-doll-detail-pg2.png)
 
+- **Doll on sale**
+
+    - The on sale tag can be applied to any doll on sale. Once applied, the price colour changes to red with a tag logo appearing infront also in red to help clearly mark the doll as being on sale. 
+
+![Doll on sale](documentation/testing/5-onsale-ft.png)
+
 - **Shop by doll dropdown menu**
 
-    - This dropdown menu shows links to each type of doll available. Once clicked on and a doll is selected, it takes the user to the dolls detail page 
+    - This dropdown menu shows links to each type of doll available. Once clicked on and a doll is selected, it takes the user to the dolls detail page. 
 
 ![Shop by doll dropdown menu](documentation/testing/5-nav-link-2.png)
 
@@ -292,7 +306,7 @@ Below are sketched images of how I planned to layout the website design. You wil
     - Below are the adjust bag button for adjusting the bag and the complete order button to complete the order.
 
 ![Checkout page](documentation/testing/5-checkout-pg1.png)
-![Checkout page](documentation/testing/5-checkout-pg1.png)
+![Checkout page](documentation/testing/5-checkout-pg2.png)
 
 - **Order confirmation page**
 
@@ -324,12 +338,13 @@ Below are sketched images of how I planned to layout the website design. You wil
     - This page can only be accessed by an authorized user or store owner. It allows the user to edit the details of any doll. It populates all the fields wiht the existing details about the doll allowing the user to change any detail. An update button is situated below to save the changes. A cancel button is also present.
 
 ![Edit page](documentation/testing/5-edit-button.png)
+![Edit page](documentation/testing/5-edit-pg1.png)
+![Edit page](documentation/testing/5-edit-pg2.png)
+![Edit page](documentation/testing/5-edit-pg3.png)
 
 - **Delete button**
 
     - This allows the user to delete a doll.
-
-![Delete button](documentation/feature01.png)
 
 - **404 Page**
 
