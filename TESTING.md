@@ -261,16 +261,33 @@ from the respective feature.
 
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature01.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature02.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature03.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature04.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature05.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature06.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature07.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature08.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature09.png) |
-| repeat for all remaining user stories | x |
+| As a site user, I would like to view a list of products, so that I can select some to purchase. | ![Shop page](documentation/testing/5-doll-pg3.png) |
+| As a site user, I would like to view individual product details, so that I can identify the price, description and product image. | ![Doll detail page](documentation/testing/5-doll-detail-pg1.png) |
+| As a site user, I would like to quickly identify deals, clearance items and special offers, so that I can take advantage of special savings on products. | ![Doll on sale](documentation/testing/5-onsale-ft.png) |
+| As a site user, I would like to view my total purchases, so that I can monitor my spending. | ![Shopping bag](documentation/testing/5-shopping-bag3.png) |
+| As a site user, I would like to view my total purchases, so that I can monitor my spending. | ![Shopping bag](documentation/testing/5-shopping-bag4.png) |
+| As a site user, I would like to register an account, so that I can have a personal account and be able to view my profile. | ![Register page](documentation/testing/5-register-pg.png) |
+| As a site user, I would like to be able to login, so that I can access my personal account information. | ![Login page](documentation/testing/5-login-pg.png) |
+| As a site user, I would like to be able to logout, so that I can exit my personal account profile. | ![Logout page](documentation/testing/5-logout-pg.png) |
+| As a site user, I should be able to recover my password incase I forget it, so that I can regain access to my account. | ![Passwork reset page](documentation/testing/5-password-reset-pg.png) |
+| As a site user, I should be able to receive an email confirmation after registration, so that I can verify that my account registration was successful. | ![screenshot](documentation/testing/5-email-confirmation.png) |
+| As a site user, I should be able to have a personalized user profile, so that I can view my order history, order confirmations and save my payment information. | ![My Profile page](documentation/testing/5-my-profile-pg.png) |
+| As a site user, I should be able to search for a product by name or description, so that I can find a specific product. | ![Search bar](documentation/testing/5-search-bar.png) |
+| As a site user, I should be able to easily select the quantity of a specific product I want to purchase, so that I can avoid wrong purchases. | ![screenshot](documentation/testing/5-qyantity-field.png) |
+| As a site user, I should be able to view items in my shopping bag, so that I can see the total cost of my purchase. | ![screenshot](documentation/testing/5-shopping-bag2.png) |
+| As a site user, I should be able to view items in my shopping bag, so that I can see the total cost of my purchase. | ![screenshot](documentation/testing/5-shopping-bag3.png) |
+| As a site user, I should be able to edit my shopping bag, so that I can make changes to my purchase before checkout. | ![screenshot](documentation/testing/5-shopping-bag2.png) |
+| As a site user, I should be able to easily enter my payment information, so that I can checkout quickly. | ![screenshot](![Checkout page](documentation/testing/5-checkout-pg1.png)) |
+| As a site user, I should be able to easily enter my payment information, so that I can checkout quickly. | ![screenshot](![Checkout page](documentation/testing/5-checkout-pg2.png)) |
+| As a site user I want to be able to feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase | ![screenshot](![Checkout page](documentation/testing/5-secure-checkout.png)) |
+| As a site user I want to be able to view an order confirmation after checkout so that I can check that I have not made any mistakes. | ![screenshot](documentation/testing/5-order-confirmation-pg2.png) |
+| As a site user I want to be able to receive an email confirmation after checkout so that I can have a record of my purchase. | ![screenshot](documentation/testing/5-order-confirmation-email.png) |
+| As a Store owner I want to be able to add a product so that I can add new items to my store. | ![screenshot](documentation/testing/5-doll-mgt-pg1.png) |
+| As a Store owner I want to be able to add a product so that I can add new items to my store. | ![screenshot](documentation/testing/5-doll-mgt-pg2.png) |
+| As a Store owner I want to be able to add a product so that I can add new items to my store. | ![screenshot](documentation/testing/5-doll-mgt-pg3.png) |
+| As a Store owner I want to be able to edit and update a product so that I can edit and update various product criteria. | ![screenshot](documentation/testing/5-edit-pg1.png) |
+| As a Store owner I want to be able to edit and update a product so that I can edit and update various product criteria. | ![screenshot](documentation/testing/5-edit-pg2.png) |
+| As a Store owner I want to be able to edit and update a product so that I can edit and update various product criteria. | ![screenshot](documentation/testing/5-edit-pg3.png) |
 
 ## Bugs
 
@@ -281,6 +298,30 @@ from the respective feature.
     - To fix this, I removed Summernote entirely.
 
     ![screenshot](documentation/testing/summernote-validation-error.png)
+
+- Background image was not showing on deployed site.
+
+    - To fix this, I changed the background image url to point to cloudinary.
+
+    ![screenshot](documentation/testing/bug1.png)
+
+- Footer was obstructing button s on pages.
+
+    - To fix this, I added 'position: sticky' attribute to the footer in base file and 'top: 100vh'. I also added 'height: 100%' to the body.
+
+    ![screenshot](documentation/testing/bug3-footer.png)
+
+- The menu dropdown button on mobile view kept on opening.
+
+    - To fix this, I corrected the typo error on collapse.
+
+    ![screenshot](documentation/testing/bug5-menu-button.png)
+
+-  On the edit page, some of the input fields were prepopulated with various characters. 
+
+    - To fix this, I removed summernote from all project files.
+
+    ![screenshot](documentation/testing/bug6-edit-pg.png)
 
 
 ## Unfixed Bugs
