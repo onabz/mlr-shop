@@ -357,6 +357,10 @@ Below are sketched images of how I planned to layout the website design. You wil
     - I would like to implement a proper filtering and sorting system to enable users be more specific in searchng for products.
 - Review section
     - I would like to include a review section to enable customers to give important feed back on the products on the site. 
+- My Profile
+    - I would like to add a name field and email field to this page to further personalize it.
+- Confirmation message before delete 
+    - I would like to add a confirmation message to appear when a super user clicks on the delete link so that user can be sure before deleting any doll.
 
 ## Tools & Technologies Used
 
