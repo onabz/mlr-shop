@@ -40,10 +40,10 @@
             <div class="row">
                 <div class="col-2 mb-1">
                     <a href="{% url 'doll_detail' item.doll.id %}">
-                        {% if item.doll.image %}
-                        <img class="w-100" src="{{ item.doll.image.url }}" alt="{{ doll.name }}">
+                        {% if "placeholder" in item.doll.image.url %}
+                        <img class="w-100" src="{% static 'img/placeholder.png' %}" alt="{{ doll.name }}">
                         {% else %}
-                        <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ doll.name }}">
+                        <img class="w-100" src="{{ item.doll.image.url }}" alt="{{ doll.name }}">
                         {% endif %}
                     </a>
                 </div>

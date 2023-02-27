@@ -1,1 +1,6 @@
-<img src="{{ item.doll.image.url }}" alt="{{ item.doll.name }}" class="img-fluid rounded">
+{% load static %}
+{% if "placeholder" in item.doll.image.url %}
+    <img src="{% static 'img/placeholder.png' %}" alt="{{ item.doll.name }}" class="img-fluid rounded">
+{% else %}
+    <img src="{{ item.doll.image.url }}" alt="{{ item.doll.name }}" class="img-fluid rounded">
+{% endif %}
