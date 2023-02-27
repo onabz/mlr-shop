@@ -63,55 +63,55 @@ I chose to use the Lato google font for the primary headers and titles and also 
 
 Below are sketched images of how I planned to layout the website design. You will notice that the final design of the website is slightly different from my initial sketches for some pages which is because the template i used was not an exact match to my sketches.
 
-### Home Page Wireframes
+**Home Page Wireframes**
 
 ![Home Page Wireframe](documentation/wireframes/home-pg.jpg)
 
-### All Dolls Page Wireframe
+**All Dolls Page Wireframe**
 
 ![All Dolls Page Wireframe](documentation/wireframes/all-dolls-pg.jpg)
 
-### Doll Detail Page Wireframe
+**Doll Detail Page Wireframe**
 
 ![Doll Detail Page Wireframe](documentation/wireframes/doll-detail-pg.jpg)
 
-### Shopping Bag Page Wireframe
+**Shopping Bag Page Wireframe**
 
 ![Shopping Bag Page Wireframe](documentation/wireframes/shopping-bag-pg.jpg)
 
-### Checkout Page Wireframe
+**Checkout Page Wireframe**
 
 ![Checkout Page Wireframe](documentation/wireframes/checkout-pg.jpg)
 
-### My Profile Page Wireframe
+**My Profile Page Wireframe**
 
 ![My Profile Page Wireframe](documentation/wireframes/logout-pg.jpg)
 
-### Logout Page Wireframe
+**Logout Page Wireframe**
 
 ![Logout Page Wireframe](documentation/wireframes/logout-pg.jpg)
 
-### Login Page Wireframe
+**Login Page Wireframe**
 
 ![Login Page Wireframe](documentation/wireframes/login-pg.jpg)
 
-### Register Page Wireframe
+**Register Page Wireframe**
 
 ![Register Page Wireframe](documentation/wireframes/register-pg.jpg)
 
-### Subscribe To Newsletter Page Wireframe
+**Subscribe To Newsletter Page Wireframe**
 
 ![Subscribe To Newsletter Page Wireframe](documentation/wireframes/shopping-bag-pg.jpg)
 
-### Sendout Newsletter Page Wireframe
+**Sendout Newsletter Page Wireframe**
 
 ![Sendout Newsletter Page Wireframe](documentation/wireframes/send-newsletter.jpg)
 
-### Add New Doll Page Wireframe
+**Add New Doll Page Wireframe**
 
 ![Add New Doll Page Wireframe](documentation/wireframes/add-doll-pg.jpg)
 
-### Contact Page Wireframe
+**Contact Page Wireframe**
 
 ![Contact Page Wireframe](documentation/wireframes/contact-pg.jpg)
 
