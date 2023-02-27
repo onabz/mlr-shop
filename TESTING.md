@@ -277,9 +277,9 @@ from the respective feature.
 | As a site user, I should be able to view items in my shopping bag, so that I can see the total cost of my purchase. | ![screenshot](documentation/testing/5-shopping-bag2.png) |
 | As a site user, I should be able to view items in my shopping bag, so that I can see the total cost of my purchase. | ![screenshot](documentation/testing/5-shopping-bag3.png) |
 | As a site user, I should be able to edit my shopping bag, so that I can make changes to my purchase before checkout. | ![screenshot](documentation/testing/5-shopping-bag2.png) |
-| As a site user, I should be able to easily enter my payment information, so that I can checkout quickly. | ![screenshot](![Checkout page](documentation/testing/5-checkout-pg1.png)) |
-| As a site user, I should be able to easily enter my payment information, so that I can checkout quickly. | ![screenshot](![Checkout page](documentation/testing/5-checkout-pg2.png)) |
-| As a site user I want to be able to feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase | ![screenshot](![Checkout page](documentation/testing/5-secure-checkout.png)) |
+| As a site user, I should be able to easily enter my payment information, so that I can checkout quickly. | ![Checkout page](documentation/testing/5-checkout-pg1.png) |
+| As a site user, I should be able to easily enter my payment information, so that I can checkout quickly. | ![Checkout page](documentation/testing/5-checkout-pg2.png) |
+| As a site user I want to be able to feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase | ![Checkout page](documentation/testing/5-secure-checkout.png) |
 | As a site user I want to be able to view an order confirmation after checkout so that I can check that I have not made any mistakes. | ![screenshot](documentation/testing/5-order-confirmation-pg2.png) |
 | As a site user I want to be able to receive an email confirmation after checkout so that I can have a record of my purchase. | ![screenshot](documentation/testing/5-order-confirmation-email.png) |
 | As a Store owner I want to be able to add a product so that I can add new items to my store. | ![screenshot](documentation/testing/5-doll-mgt-pg1.png) |
