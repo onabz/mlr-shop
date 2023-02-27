@@ -401,6 +401,8 @@ Below are sketched images of how I planned to layout the website design. You wil
 ![Checkout-App Database Schema](documentation/testing/db-schema-3.png)
 ![Profiles-App Database Schema](documentation/testing/db-schema-4.png)
 
+![database erd](documentation/erd.png)
+
 ## Agile Development Process
 
 ### GitHub Projects
