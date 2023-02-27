@@ -216,7 +216,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click on doll management link from 'my account' dropdown menu | Redirection to 'add a new doll' page | Pass | All fields on this page are required fields |
 | | Click complete order button without filling anyone of the required fields | Warning saying please fill out required field | Pass | An order will not be submitted except all the required fields are filled |
 | | Enter more than 6 digits in price field | Warning appears saying 'ensure that there are no more than 6 digits in total' | Pass | Confirms logout first |
-| | Click on Add Doll button without selecting an image | Should require you to select an image before you can add a doll | Fail | You should not be able to add a doll without selecting an image |
+| | Click on Add Doll button without selecting an image | Should require you to select an image before you can add a doll | Pass | You should not be able to add a doll without selecting an image |
 | | Click Cancel button | Redirection back to the Dolls page | Pass |  |
 | Register | | | | |
 | | Click on Register from 'my account' dropdown menu | Redirection to Sign Up page | Pass | |
