@@ -708,15 +708,27 @@ There are currently no differences between the local site and the development si
 - The steps I used to setup the newsletter was taken from [Build a Newsletter Section for Your Django Web Application](https://www.youtube.com/watch?v=hWtlskOaFNI&ab_channel=KenBroTech)
 - Some of he steps I used in setting up the contact form were taken from [Create Contact Form in Django for any website || Contact Form with bootstrap in django](https://www.youtube.com/watch?v=lSgRWA4PMt4&t=42s&ab_channel=BLearningClub)
 
+| Source | Location | Notes |
+| --- | --- | --- |
+| [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
+| [I think Therefore I Blog](https://www.youtube.com/watch?v=kEdGDvrFSks&ab_channel=MediaUpload) | Deployment | deployment to heroku, database setup and cloudinary setup |
+| [Boutique Ado](https://www.youtube.com/watch?v=EsJtBpLgLCw&ab_channel=MediaUpload) | entire site | project set up |
+| [Build a Newsletter Section for Your Django Web Application](https://www.youtube.com/watch?v=hWtlskOaFNI&ab_channel=KenBroTech) | Newsletter | setting up the newsletter |
+| [Create Contact Form in Django for any website, Contact Form with bootstrap in django](https://www.youtube.com/watch?v=lSgRWA4PMt4&t=42s&ab_channel=BLearningClub) | contact form | setting up the contact form |
+
 ### Media
 
-- The design idea for the website was taken from [Boutique Ado](https://www.youtube.com/watch?v=3gQazh-EIzY&t=20s&ab_channel=MediaUpload)
-- The icons used through out  the site were taken from [Font Awesome](https://fontawesome.com/)
-- All my background images were from [amarisandchaya](https://www.amarisandchaya.com/)
-- All my doll images were from [amarisandchaya](https://www.amarisandchaya.com/)
+- I have explicit rights to use all media files within this project.
+
+| Source | Location | Type | Notes |
+| --- | --- | --- | --- |
+| [amarisandchaya](https://www.amarisandchaya.com/) | entire site | image | Doll images accross the site |
+| [amarisandchaya](https://www.amarisandchaya.com/) | home page | image | hero image background |
 
 ### Acknowledgements
 
-- I would like to thank my Mentor [Tim Nelson](https://github.com/TravelTimN) for his invaluable support all through this project. I would not have been able to put all this together if not for his patience and insight.
-- I would like to thank [Student Care](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopmentecommerce/studentcare) for their regular check up on me to ensure that I was always on track to completing this project and to reassure me that they were always available if I needed any help.
-- I would like to thank the good people of [Tutor support](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopmentecommerce/tutor) for always being very polite and patient with me in resolving issues that I raised with them while working on this project. 
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his invaluable support throughout the development of this project.
+- I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
+- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
+- I would like to thank my spouse (Tomi), for believing in me, and allowing me to make this transition into software development.
+- I would like to thank my employer, for supporting me in my career development change towards becoming a software developer.
