@@ -704,10 +704,6 @@ There are currently no differences between the local site and the development si
  
 ### Content 
 
-- The steps I used for the project set up was taken from [I think Therefore I Blog](https://www.youtube.com/watch?v=kEdGDvrFSks&ab_channel=MediaUpload) and also [Boutique Ado](https://www.youtube.com/watch?v=EsJtBpLgLCw&ab_channel=MediaUpload)
-- The steps I used to setup the newsletter was taken from [Build a Newsletter Section for Your Django Web Application](https://www.youtube.com/watch?v=hWtlskOaFNI&ab_channel=KenBroTech)
-- Some of he steps I used in setting up the contact form were taken from [Create Contact Form in Django for any website || Contact Form with bootstrap in django](https://www.youtube.com/watch?v=lSgRWA4PMt4&t=42s&ab_channel=BLearningClub)
-
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
